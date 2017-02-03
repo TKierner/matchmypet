@@ -78,6 +78,33 @@ angular.module('starter', ['ionic', 'starter.controllers', 'test.controllers'])/
         }
       }
     })
+
+  .state('app.compte_user', {
+      url: '/compte_user',
+      views: {
+        'menuContent': {
+          templateUrl: 'views/compte_user.html'
+        }
+      }
+    })
+
+  .state('app.inscription', {
+      url: '/inscription',
+      views: {
+        'menuContent': {
+          templateUrl: 'views/inscription.html'
+        }
+      }
+    })
+
+  .state('app.choix_action', {
+      url: '/choix_action',
+      views: {
+        'menuContent': {
+          templateUrl: 'views/choix_action.html'
+        }
+      }
+    })
     /*.state('app.playlists', {
       url: '/playlists',
       views: {
