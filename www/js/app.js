@@ -42,12 +42,52 @@ angular.module('starter', ['ionic', 'starter.controllers', 'test.controllers'])/
         }
       }
     })
-	
+	//page detail historique
 	.state('app.detail_historique', {
     url: '/detail_historique',
     views: {
       'menuContent': {
         templateUrl: 'views/detail_historique.html'
+      }
+    }
+  })
+  
+  //page annonces
+	.state('app.annonces', {
+    url: '/annonces',
+    views: {
+      'menuContent': {
+        templateUrl: 'views/annonces.html'
+      }
+    }
+  })
+  
+  //page detail annonces
+	.state('app.detail_annonces', {
+    url: '/detail_annonces',
+    views: {
+      'menuContent': {
+        templateUrl: 'views/detail_annonces.html'
+      }
+    }
+  })
+  
+  //page ajout annonces
+	.state('app.ajout_annonce', {
+    url: '/ajout_annonce',
+    views: {
+      'menuContent': {
+        templateUrl: 'views/ajout_annonce.html'
+      }
+    }
+  })
+  
+  //page ajout recherche
+	.state('app.recherche', {
+    url: '/recherche',
+    views: {
+      'menuContent': {
+        templateUrl: 'views/recherche.html'
       }
     }
   })
