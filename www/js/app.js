@@ -43,6 +43,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'test.controllers'])/
       }
     })
 	
+	.state('app.detail_historique', {
+    url: '/detail_historique',
+    views: {
+      'menuContent': {
+        templateUrl: 'views/detail_historique.html'
+      }
+    }
+  })
+	
   .state('app.mes_annonces', {
     url: '/mes_annonces',
     views: {
