@@ -9818,10 +9818,10 @@ a.button {
 body h1 {
   color: blue; }
 
-body h3 {
+body h4 {
   color: #ef473a;
   text-align: center;
-  margin-top: 5px !important; }
+  margin-top: 8px !important; }
 
 body img {
   width: 100%; }
@@ -9844,7 +9844,8 @@ body img {
   padding-top: 8px; }
 
 .button.button-positive {
-  background: linear-gradient(to right, #ffb56e 0%, #ff6d6e 100%); }
+  background: linear-gradient(to right, #ffb56e 0%, #ff6d6e 100%);
+  border-radius: 20px; }
 
 .uploadimg .inputfile {
   width: 0.1px;
@@ -9866,3 +9867,6 @@ body img {
 
 .bar.bar-stable {
   background: linear-gradient(to right, #ffb56e 0%, #ff6d6e 100%); }
+
+ion-nav-bar img {
+  width: 30%; }
