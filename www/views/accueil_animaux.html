@@ -1,5 +1,63 @@
 <ion-view view-title="Les animaux">
   <ion-content>
-    <h1>Les animaux</h1>
+    <h1>Ajouter un animal</h1>
+	<div class="row">
+	  <div class="col col-33 uploadimg">+</div>
+	  <div class="col col-33 uploadimg">+</div>
+	  <div class="col col-33 uploadimg">+</div>
+	</div>
+	<form ng-submit="doLogin()">
+      <div class="list">
+		<label class="item item-input item-stacked-label">
+			<span class="input-label">Nom</span>
+			<input type="text" placeholder="Dambo">
+			<!-- <input type="text" ng-model="loginData.username">-->
+		</label>
+		<label class="item item-input item-stacked-label">
+			<span class="input-label">Date de naissance</span>
+			<input type="date">
+			<!-- <input type="text" ng-model="loginData.username">-->
+		</label>
+		<label class="item item-input">
+          <span class="input-label">Taille</span>
+          <!-- <input type="password" ng-model="loginData.password">-->
+        </label>
+		<label class="item item-input">
+          <span class="input-label">Couleur du poil</span>
+          <!-- <input type="password" ng-model="loginData.password">-->
+        </label>
+		<label class="item item-input">
+          <span class="input-label">Tâches</span>
+          <!-- <input type="password" ng-model="loginData.password">-->
+        </label>
+		<label class="item item-input">
+          <span class="input-label">Couleur des tâches</span>
+          <!-- <input type="password" ng-model="loginData.password">-->
+        </label>
+		<label class="item item-input">
+          <span class="input-label">Pedigree</span>
+          <!-- <input type="password" ng-model="loginData.password">-->
+        </label>
+		<label class="item item-input">
+          <span class="input-label">Couleur des yeux</span>
+          <!-- <input type="password" ng-model="loginData.password">-->
+        </label>
+		<label class="item item-input">
+          <span class="input-label">Caractère</span>
+          <!-- <input type="password" ng-model="loginData.password">-->
+        </label>
+		<label class="item item-input">
+          <span class="input-label">Race</span>
+          <!-- <input type="password" ng-model="loginData.password">-->
+        </label>
+		<label class="item item-input">
+          <span class="input-label">Numéro de puce</span>
+          <!-- <input type="password" ng-model="loginData.password">-->
+        </label>
+        <label class="item">
+          <button class="button button-block button-positive" type="submit">Connexion</button>
+        </label>
+      </div>
+    </form>
   </ion-content>
 </ion-view>

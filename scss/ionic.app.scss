@@ -22,9 +22,83 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 @import "www/lib/ionic/scss/ionic";
 
 body{
-h1{
-color:blue;
+	h1{
+		color:blue;
+	}
+	h3{
+		color:#ef473a;
+		text-align:center;
+		margin-top:5px !important;
+	}
+	img{
+		width:100%;
+	}
 }
-img{
-width:100%;}
+
+//border degradé
+.formanimal{
+	.item-input{
+		width : 90%;
+		margin: auto;
+		border: none;
+		border-bottom: 2px solid transparent;
+		border-image: linear-gradient(to right, #ffb56e 0%, #ff6d6e 100%);
+		border-image-slice: 1;
+	}
 }
+
+//bouton tache
+.formanimal {
+	.toggle{
+		position:absolute;
+		margin-top:1px;
+		margin-left:40%;
+	}
+}
+
+.formanimal {
+	.tache{
+		padding-bottom:12px;
+		padding-top:8px;
+	}
+}
+
+//bouton formulaires
+.button.button-positive{
+	background: linear-gradient(to right, #ffb56e 0%, #ff6d6e 100%);
+}
+
+
+.uploadimg{
+	.inputfile {
+		width: 0.1px;
+		height: 0.1px;
+		opacity: 0;
+		overflow: hidden;
+		position: absolute;
+		z-index: -1;
+	}
+}
+
+.uploadimg{
+	.inputfile + label {
+		font-size: 1.25em;
+		font-weight: 700;
+		color: white;
+		background-color: black;
+		display: inline-block;
+	}
+}
+
+.uploadimg{
+	.inputfile:focus + label,.inputfile + label:hover {
+		background-color: red;
+	}
+}
+
+//menu 
+
+.bar.bar-stable{
+	background: linear-gradient(to right, #ffb56e 0%, #ff6d6e 100%);
+}
+

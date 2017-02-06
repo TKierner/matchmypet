@@ -9818,5 +9818,51 @@ a.button {
 body h1 {
   color: blue; }
 
+body h3 {
+  color: #ef473a;
+  text-align: center;
+  margin-top: 5px !important; }
+
 body img {
   width: 100%; }
+
+.formanimal .item-input {
+  width: 90%;
+  margin: auto;
+  border: none;
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(to right, #ffb56e 0%, #ff6d6e 100%);
+  border-image-slice: 1; }
+
+.formanimal .toggle {
+  position: absolute;
+  margin-top: 1px;
+  margin-left: 40%; }
+
+.formanimal .tache {
+  padding-bottom: 12px;
+  padding-top: 8px; }
+
+.button.button-positive {
+  background: linear-gradient(to right, #ffb56e 0%, #ff6d6e 100%); }
+
+.uploadimg .inputfile {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1; }
+
+.uploadimg .inputfile + label {
+  font-size: 1.25em;
+  font-weight: 700;
+  color: white;
+  background-color: black;
+  display: inline-block; }
+
+.uploadimg .inputfile:focus + label, .uploadimg .inputfile + label:hover {
+  background-color: red; }
+
+.bar.bar-stable {
+  background: linear-gradient(to right, #ffb56e 0%, #ff6d6e 100%); }

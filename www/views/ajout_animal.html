@@ -1,5 +1,89 @@
-<ion-view view-title="Ajouter un animal">
+<ion-view view-title="Les animaux">
   <ion-content>
-    <h1>Ajouter un animal</h1>
+    <h3>Ajouter un animal</h3>
+	<div class="row">
+	  <div class="col col-33 uploadimg">
+			<input type="file" name="file" id="file" class="inputfile" />
+			<label for="file">+</label>
+	  </div>
+	  <div class="col col-33 uploadimg">+</div>
+	  <div class="col col-33 uploadimg">+</div>
+	</div>
+	<form class ="formanimal" g-submit="doLogin()">
+      <div class="list">
+		<label class="item item-input item-stacked-label">
+			<span class="input-label">Nom</span>
+			<input type="text" placeholder="Dambo">
+			<!-- <input type="text" ng-model="loginData.username">-->
+		</label>
+		<label class="item item-input item-stacked-label">
+			<span class="input-label">Date de naissance</span>
+			<input type="date">
+			<!-- <input type="text" ng-model="loginData.username">-->
+		</label>
+		<label class="item item-input item-stacked-label">
+			<span class="input-label">Taille</span>
+			 <input type="number" name="taille" min="20" max="205" placeholder="105cm">
+			<!-- <input type="text" ng-model="loginData.username">-->
+		</label>
+		<label class="item item-input item-stacked-label">
+			<span class="input-label">Couleur du poil</span>
+			<input type="text" placeholder="Noir">
+			<!-- <input type="text" ng-model="loginData.username">-->
+		</label>
+		<label class="item item-input item-stacked-label">
+		<span class="input-label tache">Tâches</span>
+		<label class="toggle toggle-assertive">
+		   <input type="checkbox">
+		   <div class="track">
+			 <div class="handle"></div>
+		   </div>
+		</label>
+		</label>
+		<label class="item item-input item-stacked-label">
+			<span class="input-label">Couleur des tâches</span>
+			<input type="text" placeholder="Noir">
+			<!-- <input type="text" ng-model="loginData.username">-->
+		</label>
+		<label class="item item-input item-stacked-label">
+			<span class="input-label">Pedigree</span>
+			<input type="file" placeholder="0506501651">
+			<!-- <input type="text" ng-model="loginData.username">-->
+		</label>
+		<label class="item item-input item-stacked-label">
+			<span class="input-label">Couleur des yeux</span>
+			<input type="text" placeholder="Bleu">
+			<!-- <input type="text" ng-model="loginData.username">-->
+		</label>
+		<label class="item item-input item-select">
+			<div class="input-label">
+			  Caractère
+			</div>
+			<select>
+			  <option>Blue</option>
+			  <option selected>Green</option>
+			  <option>Red</option>
+			</select>
+		</label>
+		<label class="item item-input item-select">
+			<div class="input-label">
+			  Race
+			</div>
+			<select>
+			  <option>Blue</option>
+			  <option selected>Green</option>
+			  <option>Red</option>
+			</select>
+		</label>
+		<label class="item item-input item-stacked-label">
+			<span class="input-label">Numéro de puce</span>
+			<input type="text" placeholder="0102010356">
+			<!-- <input type="text" ng-model="loginData.username">-->
+		</label>
+        <label class="item">
+          <button class="button button-block button-positive" type="submit">Connexion</button>
+        </label>
+      </div>
+    </form>
   </ion-content>
 </ion-view>
