@@ -28,3 +28,55 @@ color:blue;
 img{
 width:100%;}
 }
+.item {
+	background : transparent;
+}
+#loginView {
+	background-image : url('../img/backgrounds/background.jpg');
+	background-position : center;
+	background-repeat : no-repeat;
+	background-size : 275% 100%;
+}
+.loginForm {
+	padding-top : 75%;
+}
+.boutonBorderLess {
+	border : none;
+	padding-left : 20%;
+	padding-right : 20%;
+}
+.button-positive {
+	background: linear-gradient(to right, #ffb56e 0%, #ff6d6e 100%); 
+	border-radius : 20px;
+}
+
+#connexionButton {
+	padding-top : 10%;
+	padding-bottom : 0%;
+}
+
+#champTop {
+	border-top : none;
+	border-left : none;
+	border-right : none;
+}
+
+#forgottenPwd {
+	position : absolute;
+	right : 2%;
+}
+#forgottenPwd a {
+	color : white;
+}
+
+.item-input {
+	width : 90%;
+	border-top : none;
+	border-left : none;
+	border-right : none;
+	border-bottom : solid 2px white;
+	margin-left : 5%;
+}
+.input-label {
+	color : white;
+}

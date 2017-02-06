@@ -1,25 +1,31 @@
-<ion-modal-view>
-  <ion-header-bar>
-    <h1 class="title">Login</h1>
-    <div class="buttons">
-      <button class="button button-clear" ng-click="closeLogin()">Close</button>
-    </div>
-  </ion-header-bar>
+<ion-view view-title="Login" id="loginView">
   <ion-content>
+    <!-- logo -->
+    <!-- typo -->
     <form ng-submit="doLogin()">
-      <div class="list">
-        <label class="item item-input">
-          <span class="input-label">Username</span>
+      <div class="list loginForm">
+        <label class="item item-input" id="champTop">
+          <span class="input-label">Login</span>
           <input type="text" ng-model="loginData.username">
         </label>
         <label class="item item-input">
-          <span class="input-label">Password</span>
+          <span class="input-label">Mot de passe</span>
           <input type="password" ng-model="loginData.password">
         </label>
-        <label class="item">
-          <button class="button button-block button-positive" type="submit">Log in</button>
+        <label class="item boutonBorderLess" id="connexionButton">
+          <button class="button button-block button-positive" type="submit">Se connecter</button>
         </label>
       </div>
     </form>
+    <form ng-submit="">
+      <div class="list insciption">
+        <label class="item boutonBorderLess">
+          <button class="button button-block button-positive" type="submit">S'inscrire</button>
+        </label>
+      </div>
+    </form>
+    <div id="forgottenPwd">
+      <a>Mot de passe oublié</a>
+    </div>
   </ion-content>
-</ion-modal-view>
+</ion-view>
