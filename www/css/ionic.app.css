@@ -9865,8 +9865,36 @@ body img {
 .uploadimg .inputfile:focus + label, .uploadimg .inputfile + label:hover {
   background-color: red; }
 
-.bar.bar-stable {
+.bar.bar-header {
   background: linear-gradient(to right, #ffb56e 0%, #ff6d6e 100%); }
 
-ion-nav-bar img {
-  width: 30%; }
+.iconemenu {
+  width: 36% !important;
+  margin-top: -5%; }
+
+.iconemenu2 {
+  width: 68% !important;
+  margin-top: -5%; }
+
+.button.button-icon.button-clear.ion-navicon {
+  color: white; }
+
+.logo {
+  margin-left: 30%; }
+
+input::-webkit-input-placeholder {
+  color: black;
+  opacity: 1;
+  font-size: 16px; }
+
+*:-moz-placeholder {
+  color: black;
+  opacity: 1; }
+
+*:-ms-input-placeholder {
+  /* IE10+ */
+  color: black;
+  opacity: 1; }
+
+.input-label {
+  color: black; }
