@@ -31,44 +31,57 @@ width:100%;}
 .item {
 	background : transparent;
 }
+
+//vue de la page connexion
 #loginView {
 	background-image : url('../img/backgrounds/background.jpg');
 	background-position : center;
 	background-repeat : no-repeat;
 	background-size : 275% 100%;
 }
-.loginForm {
-	padding-top : 75%;
-}
+//formulaire de connexion
+/*.loginForm {
+	padding-top : 66%;
+}*/
+
+//suppression des bordures indésirées
 .boutonBorderLess {
 	border : none;
 	padding-left : 20%;
 	padding-right : 20%;
 }
+
+//style des boutons du formulaire de connexion
 .button-positive {
 	background: linear-gradient(to right, #ffb56e 0%, #ff6d6e 100%); 
 	border-radius : 20px;
 }
 
+//bouton de connexion reduction des espaces
 #connexionButton {
 	padding-top : 10%;
 	padding-bottom : 0%;
 }
 
+//suppression des bordures indésirées sur le formulaire de connexion
 #champTop {
 	border-top : none;
 	border-left : none;
 	border-right : none;
 }
 
+//Lien vers mot de passe oublié
 #forgottenPwd {
 	position : absolute;
-	right : 2%;
+	right : 5%;
+	bottom : 1%;
 }
+//Lien vers mot de passe oublié couleur texte
 #forgottenPwd a {
 	color : white;
 }
 
+//style des champs de formulaire
 .item-input {
 	width : 90%;
 	border-top : none;
@@ -77,6 +90,14 @@ width:100%;}
 	border-bottom : solid 2px white;
 	margin-left : 5%;
 }
+//Style des labels formulaire
 .input-label {
 	color : white;
+}
+
+//style logo home
+#logoHome {
+	padding-top : 3%;
+	width : 50%;
+	height : 50%;
 }

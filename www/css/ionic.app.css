@@ -9830,9 +9830,9 @@ body img {
   background-repeat: no-repeat;
   background-size: 275% 100%; }
 
-.loginForm {
-  padding-top: 75%; }
-
+/*.loginForm {
+	padding-top : 66%;
+}*/
 .boutonBorderLess {
   border: none;
   padding-left: 20%;
@@ -9853,7 +9853,8 @@ body img {
 
 #forgottenPwd {
   position: absolute;
-  right: 2%; }
+  right: 5%;
+  bottom: 1%; }
 
 #forgottenPwd a {
   color: white; }
@@ -9868,3 +9869,8 @@ body img {
 
 .input-label {
   color: white; }
+
+#logoHome {
+  padding-top: 3%;
+  width: 50%;
+  height: 50%; }

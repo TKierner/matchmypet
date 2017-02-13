@@ -1,7 +1,16 @@
-<ion-view view-title="Login" id="loginView">
+<ion-view view-title="Login" id="loginView" hide-nav-bar="true">
   <ion-content>
+    
     <!-- logo -->
-    <!-- typo -->
+    <center>
+      <div id="logoHome">
+        <img src="../img/logos/logo.png">
+        <!-- typo -->
+        <img src="../img/logos/lettering.png">
+      </div>
+    </center>
+
+    <!-- formulaire de connexion -->
     <form ng-submit="doLogin()">
       <div class="list loginForm">
         <label class="item item-input" id="champTop">
@@ -17,6 +26,8 @@
         </label>
       </div>
     </form>
+    
+    <!--Lien vers le formulaire d'inscription -->
     <form ng-submit="">
       <div class="list insciption">
         <label class="item boutonBorderLess">
@@ -24,6 +35,8 @@
         </label>
       </div>
     </form>
+
+    <!-- Mot de passe oublié -->
     <div id="forgottenPwd">
       <a>Mot de passe oublié</a>
     </div>
