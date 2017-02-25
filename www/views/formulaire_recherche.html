@@ -1,0 +1,86 @@
+<ion-view view-title="Rechercher un chien">
+  <ion-content>
+	  <div class="contenu_ajout_animal">
+    <h4>RECHERCHE</h4>
+
+	<form class ="formanimal" g-submit="doLogin()">
+      <div class="list">
+      <label class="item item-input item-select">
+			<div class="input-label">
+				<img class="imgformtache" ng-src="../img/icones_formulaires/race.png">
+			  Race
+			</div>
+			<select>
+			  <option>Blue</option>
+			  <option selected>Green</option>
+			  <option>Red</option>
+			</select>
+		</label>
+      <label class="item item-input item-stacked-label">
+			<img class="imgform" ng-src="../img/icones_formulaires/date_naissance.png">
+			 <input class="special" type="number" name="age" min="1" max="40" placeholder="Age">
+			<!-- <input type="text" ng-model="loginData.username">-->
+		</label>
+		<label class="item item-input item-stacked-label">
+			<img class="imgform" ng-src="../img/icones_formulaires/taille.png">
+			 <input class="special" type="number" name="taille" min="20" max="205" placeholder="Taille">
+			<!-- <input type="text" ng-model="loginData.username">-->
+		</label>
+		<label class="item item-input item-stacked-label">
+			<img class="imgform" ng-src="../img/icones_formulaires/couleur_poils.png">
+			<input class="special" type="text" placeholder="Couleur du poil">
+			<!-- <input type="text" ng-model="loginData.username">-->
+		</label>
+		<label class="item item-input item-stacked-label">
+		<span class="input-label tache"><img class="imgformtache" ng-src="../img/icones_formulaires/tache.png">Tâches</span>
+		<label class="toggle toggle-assertive">
+		   <input type="checkbox">
+		   <div class="track">
+			 <div class="handle"></div>
+		   </div>
+		</label>
+		</label>
+		<label class="item item-input item-stacked-label">
+			<img class="imgform" ng-src="../img/icones_formulaires/tache.png">
+			<input class="special" type="text" placeholder="Couleur des tâches">
+			<!-- <input type="text" ng-model="loginData.username">-->
+		</label>
+		<label class="item item-input item-stacked-label">
+			<img class="imgform" ng-src="../img/icones_formulaires/couleur_yeux.png">
+			<input class="special" type="text" placeholder="Couleur des yeux">
+			<!-- <input type="text" ng-model="loginData.username">-->
+		</label>
+		<label class="item item-input item-select">
+			<div class="input-label">
+				<img class="imgformtache" ng-src="../img/icones_formulaires/caractere.png">
+			  Caractère
+			</div>
+			<select>
+			  <option>Blue</option>
+			  <option selected>Green</option>
+			  <option>Red</option>
+			</select>
+		</label>
+        <label class="item item-input item-stacked-label">
+			<img class="imgform" ng-src="../img/icones_formulaires/prix.png">
+			 <input class="special" type="number" name="prix" min="1" max="2000" placeholder="Prix">
+			<!-- <input type="text" ng-model="loginData.username">-->
+		</label>
+        <label class="item item-input item-stacked-label">
+		<span class="input-label tache"><img class="imgformtache" ng-src="../img/icones_formulaires/geolocalisation.png">Autour de moi</span>
+		<label class="toggle toggle-assertive">
+		   <input type="checkbox">
+		   <div class="track">
+			 <div class="handle"></div>
+		   </div>
+		</label>
+		</label>
+        <label class="item">
+          <button class="button button-block button-positive" type="submit">RECHERCHER</button>
+        </label>
+      </div>
+    </form>
+	  </div>
+  </ion-content>
+</ion-view>
+

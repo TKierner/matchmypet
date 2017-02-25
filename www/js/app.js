@@ -52,6 +52,26 @@ angular.module('starter', ['ionic', 'starter.controllers', 'test.controllers'])/
     }
   })
   
+  //page formulaire recherche
+	.state('app.formulaire_recherche', {
+    url: '/formulaire_recherche',
+    views: {
+      'menuContent': {
+        templateUrl: 'views/formulaire_recherche.html'
+      }
+    }
+  })
+  
+  //page paiement
+	.state('app.paiement', {
+    url: '/paiement',
+    views: {
+      'menuContent': {
+        templateUrl: 'views/paiement.html'
+      }
+    }
+  })
+  
   //page annonces
 	.state('app.annonces', {
     url: '/annonces',
