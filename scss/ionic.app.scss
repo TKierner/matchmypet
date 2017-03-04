@@ -274,3 +274,77 @@ padding:0 !important;
   color:white;
 }
 
+
+//page details animal 
+
+.row.rowdetailanimal{
+    padding:0;
+}
+
+.row.rowdetailanimal2{
+    padding:0;
+    background: linear-gradient(to right, #ffb56e 0%, #ff6d6e 100%);
+}
+
+
+.col.coldetailanimal{
+    padding:0;
+}
+
+.col.coldetailanimalicon{
+    padding:0;
+    
+    img{
+    width:60%;
+     display: block;
+         margin-left: auto;
+        margin-right: auto;
+        padding-top:20px;
+    }
+    
+    p{
+    text-align:center;
+    color:white;
+    font-size:1.2em;
+    padding-top:5px;
+    }
+}
+
+.bordertop{
+    border-top:2px solid white;
+}
+.borderright{
+    border-right:2px solid white;
+}
+
+.description{
+    padding-top:10px;
+    padding-left:20px;
+    padding-right:20px;
+    p{
+    color:black;
+    font-size:1.2em;
+    text-align:justify;
+    }
+}
+
+.btnajoutpanier{
+    background: linear-gradient(to right, #ffb56e 0%, #ff6d6e 100%);
+    width:80% !important;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius:10px;
+    
+    img{
+    width:40%;
+    }
+    
+    p{
+    text-align:center;
+    color:white !important;
+    font-size:1.3em;
+    font-weight:normal;
+    margin-bottom:0;
+    }
+}
+

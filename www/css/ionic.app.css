@@ -9947,3 +9947,57 @@ input::-webkit-input-placeholder {
 .bar.bar-stable .title {
   text-align: center;
   color: white; }
+
+.row.rowdetailanimal {
+  padding: 0; }
+
+.row.rowdetailanimal2 {
+  padding: 0;
+  background: linear-gradient(to right, #ffb56e 0%, #ff6d6e 100%); }
+
+.col.coldetailanimal {
+  padding: 0; }
+
+.col.coldetailanimalicon {
+  padding: 0; }
+  .col.coldetailanimalicon img {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px; }
+  .col.coldetailanimalicon p {
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+    padding-top: 5px; }
+
+.bordertop {
+  border-top: 2px solid white; }
+
+.borderright {
+  border-right: 2px solid white; }
+
+.description {
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px; }
+  .description p {
+    color: black;
+    font-size: 1.2em;
+    text-align: justify; }
+
+.btnajoutpanier {
+  background: linear-gradient(to right, #ffb56e 0%, #ff6d6e 100%);
+  width: 80% !important;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px; }
+  .btnajoutpanier img {
+    width: 40%; }
+  .btnajoutpanier p {
+    text-align: center;
+    color: white !important;
+    font-size: 1.3em;
+    font-weight: normal;
+    margin-bottom: 0; }
