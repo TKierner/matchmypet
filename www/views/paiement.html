@@ -1,4 +1,4 @@
-<ion-view view-title="Recherche">
+<ion-view view-title="Paiement">
   <ion-content>
    <div class="contenu_ajout_animal">
   <h4>PAIEMENT</h4>
@@ -17,19 +17,58 @@
           <div class="col col-20"><p><img class="icone-paiement" ng-src="../img/paiement/cb.png"></p></div>
           <div class="col col-10"><p><img class="icone-fleche" ng-src="../img/paiement/fleche.png"></p></div>
         </div>
-        <form class ="piamentform">
+        <form class ="paimentform">
             <div class="list">
                 <label class="item item-input item-stacked-label">
-                    Titulaire de la carte
+                    <p class="textpaiement">Titulaire de la carte</p>
                     <input class="special" type="text" placeholder="Doit être conforme à la carte">
                 </label>
             </div>
+            <div class="list">
+                <label class="item item-input item-stacked-label">
+                    <p class="textpaiement">Numéro de carte</p>
+                    <input class="special" type="text" placeholder="1000 0000 0000 0000">
+                </label>
+            </div>
+            <div class="list">
+                <label class="item item-input item-stacked-label">
+                    <p class="textpaiement">Expire fin </p>
+                    <input class="special" type="text" placeholder="MM/AA">
+                </label>
+            </div>
+            <div class="list">
+                <label class="item item-input item-stacked-label">
+                    <p class="textpaiement">Code sécurité</p>
+                    <input class="special" type="number" name="prix" min="100" max="999" placeholder="XXX">
+                </label>
+            </div>
+            <label class="item item-input item-stacked-label">
+            <p class="textpaiement">Enregistrer ma carte bancaire</p>
+            <label class="toggle toggle-assertive">
+               <input type="checkbox">
+               <div class="track">
+                 <div class="handle"></div>
+               </div>
+            </label>
+            </label>
+            <label class="item">
+            <button class="button" type="submit">
+                <div class="row btnpaypal">
+                    <div class="col col-20"><img ng-src="../img/paiement/lock.png"></div>
+                    <div class="col col-80"><p>Payer 850€</p></div>
+                </div>
+            </button>
+            </label>
         </form>
         <div class="row ligne-paiement2">
           <div class="col col-50"><p class="left">Paypal</p></div>
           <div class="col col-30"><p><img class="icone-paiement" ng-src="../img/paiement/paypal.png"></p></div>
           <div class="col col-10"></div>
           <div class="col col-10"><p><img class="icone-fleche" ng-src="../img/paiement/fleche.png"></p></div>
+        </div>
+        <div class="row btnpaypal">
+            <div class="col col-20"><img ng-src="../img/paiement/lock.png"></div>
+            <div class="col col-80"><p>Accéder à </br>Paypal</p></div>
         </div>
     </div>
   </ion-content>

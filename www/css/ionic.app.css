@@ -10020,3 +10020,62 @@ img.icone-paiement {
 img.icone-fleche {
   width: 100%;
   padding-top: 5px; }
+
+.paimentform .item-input {
+  width: 84%;
+  margin: auto;
+  border: none;
+  border-bottom: 2px solid #bebebe; }
+
+.paimentform .item p {
+  color: black;
+  font-weight: 500;
+  font-size: 1.2em;
+  margin-left: -10px; }
+
+.paimentform .button {
+  background-color: white; }
+
+.btnpaypal {
+  background: linear-gradient(to right, #ffb56e 0%, #ff6d6e 100%);
+  width: 50% !important;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px; }
+  .btnpaypal img {
+    padding-top: 10px; }
+  .btnpaypal p {
+    text-align: center;
+    color: white !important;
+    font-size: 1.3em;
+    font-weight: normal;
+    margin-bottom: 0; }
+
+.row.btnpaypal {
+  margin-top: 20px;
+  margin-bottom: 10px; }
+
+.row.mesannonces {
+  padding: 0; }
+
+.col.colannonces {
+  padding: 0; }
+
+p.nomchien {
+  color: black;
+  font-weight: 500;
+  font-size: 1.2em;
+  text-align: center; }
+
+p.infoschien {
+  color: black;
+  font-weight: normal;
+  font-size: 1.2em;
+  padding-left: 10px; }
+
+.imgplus {
+  width: 30%;
+  float: right;
+  position: relative;
+  top: -75px;
+  right: 25px; }
