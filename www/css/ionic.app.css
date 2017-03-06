@@ -9987,17 +9987,69 @@ input::-webkit-input-placeholder {
     font-size: 1.2em;
     text-align: justify; }
 
+.coliconl {
+  margin-left: 10px; }
+
+.coliconr {
+  margin-right: 50px; }
+
+.rowdetailavecicon p {
+  font-size: 1.2em;
+  padding-left: 10px; }
+
+.rowdetailnote {
+  margin-left: 10px; }
+  .rowdetailnote p {
+    font-size: 1.2em;
+    padding-left: 10px; }
+
 .btnajoutpanier {
   background: linear-gradient(to right, #ffb56e 0%, #ff6d6e 100%);
   width: 80% !important;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 10px; }
+  border-radius: 10px;
+  margin-top: 10px; }
   .btnajoutpanier img {
-    width: 40%; }
+    width: 34%;
+    margin-top: -4px; }
   .btnajoutpanier p {
     text-align: center;
     color: white !important;
     font-size: 1.3em;
     font-weight: normal;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    padding-left: 16px; }
+  .btnajoutpanier h3 {
+    padding-top: 5px;
+    text-align: center;
+    color: white !important;
+    font-size: 1.8em;
+    font-weight: normal; }
+
+.comment {
+  margin: auto;
+  border: none;
+  border: 4px solid transparent;
+  border-image: linear-gradient(to right, #ffb56e 0%, #ff6d6e 100%);
+  border-image-slice: 1;
+  margin: 20px; }
+  .comment .nomcomment {
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: 600; }
+  .comment .textcomment {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.2em; }
+
+.commentaires h3 {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.rowdetailnote2 {
+  margin-left: 50px; }
+  .rowdetailnote2 p {
+    font-size: 1.2em;
+    padding-left: 10px; }
