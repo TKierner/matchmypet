@@ -52,6 +52,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'test.controllers'])/
     }
   })
   
+  //page detail ajout_commentaire
+	.state('app.ajout_commentaire', {
+    url: '/ajout_commentaire',
+    views: {
+      'menuContent': {
+        templateUrl: 'views/ajout_commentaire.html'
+      }
+    }
+  })
+  
   //page formulaire recherche
 	.state('app.formulaire_recherche', {
     url: '/formulaire_recherche',
