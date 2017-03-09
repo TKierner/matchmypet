@@ -5,15 +5,26 @@
     
 	<form class ="formanimal" g-submit="doLogin()">
       <div class="list">
+      
+      <div class="container">
+          <div class="switch">
+            <input type="radio" class="switch-input" name="view" value="lof" id="week" checked>
+            <label for="week" class="switch-label switch-label-off">LOF</label>
+            <input type="radio" class="switch-input" name="view" value="nonlof" id="month">
+            <label for="month" class="switch-label switch-label-on">NON LOF</label>
+            <span class="switch-selection"></span>
+          </div>
+      </div>
+      
       <label class="item item-input item-select">
 			<div class="input-label">
 				<img class="imgformtache" ng-src="../img/icones_formulaires/race.png">
 			  Race
 			</div>
 			<select>
-			  <option>Blue</option>
-			  <option selected>Green</option>
-			  <option>Red</option>
+			  <option>Labrador</option>
+			  <option selected>Berger allemand</option>
+			  <option>Pitbull</option>
 			</select>
 		</label>
       <label class="item item-input item-stacked-label">
