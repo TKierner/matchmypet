@@ -10111,6 +10111,30 @@ p.infoschien {
   top: -75px;
   right: 25px; }
 
+.row.imgcomment {
+  padding: 0; }
+
+.imgcomment .col {
+  padding: 0; }
+
+.formaddcomment .textaddcomment {
+  font-size: 16px;
+  padding-bottom: 12px;
+  padding-top: 8px; }
+
+.formaddcomment .item-input textarea {
+  font-size: 16px;
+  color: grey;
+  padding-top: 10px; }
+
+.formaddcomment .item-input input[type="number"] {
+  font-size: 16px;
+  color: grey;
+  padding-top: 10px; }
+
+.formaddcomment input[type="number"] ::placeholder {
+  color: grey !important; }
+
 .boutons {
   background: linear-gradient(to right, #ffb56e 0%, #ff6d6e 100%); }
 
