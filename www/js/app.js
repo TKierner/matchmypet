@@ -170,6 +170,34 @@ angular.module('starter', ['ionic', 'starter.controllers', 'test.controllers'])/
       }
     })
 
+
+  .state('app.detail_animal', {
+    url: '/detail_animal',
+    views: {
+      'menuContent': {
+        templateUrl: 'views/detail_animal.html'
+      }
+    }
+  })
+
+  .state('app.accueil_animaux', {
+    url: '/accueil_animaux',
+    views: {
+      'menuContent': {
+        templateUrl: 'views/accueil_animaux.html'
+      }
+    }
+  })
+
+  .state('app.ajout_animal', {
+    url: '/ajout_animal',
+    views: {
+      'menuContent': {
+        templateUrl: 'views/ajout_animal.html'
+      }
+    }
+  })
+
   .state('app.compte_user', {
       url: '/compte_user',
       views: {
@@ -214,6 +242,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'test.controllers'])/
         }
       }
     })
+
     /*.state('app.playlists', {
       url: '/playlists',
       views: {

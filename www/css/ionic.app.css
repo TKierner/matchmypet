@@ -9826,6 +9826,8 @@ body h4 {
 body img {
   width: 100%; }
 
+.btnform {
+  background: linear-gradient(to right, #ffb56e 0%, #ff6d6e 100%); }
 
 .item {
   background: transparent; }
@@ -9996,7 +9998,7 @@ body img {
 .consulterHistorique a {
   text-decoration: none;
   color: #ffffff; }
-=======
+
 .contenu_ajout_animal {
   margin-top: 50px; }
 
@@ -10021,6 +10023,10 @@ body img {
   margin-left: 32%; }
 
 .btnupload {
+
+  margin: 5px;
+  height: 100px;
+  position: relative;
   margin: auto;
   border: none;
   border: 2px solid transparent;
@@ -10029,6 +10035,37 @@ body img {
   text-align: center;
   font-size: 20px;
   overflow: hidden; }
+
+
+.btnupload input[type=file] {
+  height: 90px; }
+
+.btnupload p {
+  position: absolute;
+  top: 36px;
+  font-size: 1.2em;
+  left: 42%; }
+
+.btnpedigree {
+  position: relative;
+  border: none;
+  border: 2px solid transparent;
+  border-image: linear-gradient(to right, #ffb56e 0%, #ff6d6e 100%);
+  border-image-slice: 1;
+  width: 10%;
+  margin-right: 10px;
+  float: right;
+  height: 30px; }
+
+.btnpedigree input[type=file] {
+  height: 30px;
+  padding: 0; }
+
+.btnpedigree p {
+  position: absolute;
+  top: -2px;
+  font-size: 1.2em;
+  left: 25%; }
 
 .thumbnail {
   width: 100%; }
@@ -10119,6 +10156,70 @@ input::-webkit-input-placeholder {
   text-align: center;
   color: white; }
 
+.row.rowdetailanimal {
+  padding: 0; }
+
+.row.rowdetailanimal2 {
+  padding: 0;
+  background: linear-gradient(to right, #ffb56e 0%, #ff6d6e 100%); }
+
+.col.coldetailanimal {
+  padding: 0; }
+
+.col.coldetailanimalicon {
+  padding: 0; }
+  .col.coldetailanimalicon img {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px; }
+  .col.coldetailanimalicon p {
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+    padding-top: 5px; }
+
+.bordertop {
+  border-top: 2px solid white; }
+
+.borderright {
+  border-right: 2px solid white; }
+
+.description {
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px; }
+  .description p {
+    color: black;
+    font-size: 1.2em;
+    text-align: justify; }
+
+.coliconl {
+  margin-left: 10px; }
+
+.rowdetailavecicon p {
+  font-size: 1.2em;
+  padding-left: 10px; }
+
+.rowdetailnote {
+  margin-left: 10px; }
+  .rowdetailnote p {
+    font-size: 1.2em;
+    padding-left: 10px; }
+
+.btnajoutpanier {
+  background: linear-gradient(to right, #ffb56e 0%, #ff6d6e 100%);
+  width: 80% !important;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  margin-top: 10px; }
+  .btnajoutpanier img {
+    width: 34%;
+    margin-top: -4px; }
+  .btnajoutpanier p {
+=======
 .recherche_simplifiee .col {
   padding: 0; }
 
@@ -10243,10 +10344,47 @@ img.icone-fleche {
   .btnpaypal img {
     padding-top: 10px; }
   .btnpaypal p {
+
     text-align: center;
     color: white !important;
     font-size: 1.3em;
     font-weight: normal;
+    margin-bottom: 0;
+    padding-left: 16px; }
+    
+  .btnajoutpanier h3 {
+    padding-top: 5px;
+    text-align: center;
+    color: white !important;
+    font-size: 1.8em;
+    font-weight: normal; }
+
+.comment {
+  margin: auto;
+  border: none;
+  border: 4px solid transparent;
+  border-image: linear-gradient(to right, #ffb56e 0%, #ff6d6e 100%);
+  border-image-slice: 1;
+  margin: 20px; }
+  .comment .nomcomment {
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: 600; }
+  .comment .textcomment {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1.2em; }
+
+.commentaires h3 {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.rowdetailnote2 {
+  margin-left: 50px; }
+  .rowdetailnote2 p {
+    font-size: 1.2em;
+    padding-left: 10px; 
     margin-bottom: 0; }
 
 .row.btnpaypal {
@@ -10377,4 +10515,3 @@ p.infoschien {
   -moz-transition: left 0.15s ease-out;
   -o-transition: left 0.15s ease-out;
   transition: left 0.15s ease-out; }
-
