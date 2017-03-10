@@ -9,11 +9,23 @@
   </ion-content>
 </ion-view> -->
 
+<!--<ion-view view-title="{{title}}">
+  <ion-content>
+    <h1>{{title}}</h1> <!--on appelle les valeurs qui sont présentes dans le controlleur 
+	<a href="{{url}}">{{url}}</a> <!--on appelle les valeurs qui sont présentes dans le controlleur
+	
+	<div class="bar bar-footer bar-positive">
+	  <div class="title">Match My Pet</div>
+	</div>
+  </ion-content>
+</ion-view>-->
+
 <ion-view view-title="{{title}}">
   <ion-content>
-    <h1>{{title}}</h1> <!--on appelle les valeurs qui sont présentes dans le controlleur -->
-	<a href="{{url}}">{{url}}</a> <!--on appelle les valeurs qui sont présentes dans le controlleur -->
-	
+   
+  	<div ng-bind-html="html"></div>
+  	{{ json.title }}
+
 	<div class="bar bar-footer bar-positive">
 	  <div class="title">Match My Pet</div>
 	</div>

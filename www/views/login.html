@@ -1,25 +1,46 @@
-<ion-modal-view>
-  <ion-header-bar>
-    <h1 class="title">Login</h1>
-    <div class="buttons">
-      <button class="button button-clear" ng-click="closeLogin()">Close</button>
-    </div>
-  </ion-header-bar>
-  <ion-content>
-    <form ng-submit="doLogin()">
-      <div class="list">
-        <label class="item item-input">
-          <span class="input-label">Username</span>
+<ion-view view-title="Login" id="loginView" hide-nav-bar="true">
+  <ion-content >
+    
+    <!-- logo -->
+    <center>
+      <div id="logoHome">
+        <img src="img/logo/logo.png"/>
+        <!-- typo -->
+        <img src="img/logo/lettering.png"/>
+      </div>
+    </center>
+
+    <!-- formulaire de connexion -->
+    <!--<form ng-submit="">-->
+      <div class="list loginForm">
+        <label class="item item-input champsFormLogin">
+          <span class="input-label placeholderText">Login</span>
           <input type="text" ng-model="loginData.username">
         </label>
-        <label class="item item-input">
-          <span class="input-label">Password</span>
+        <label class="item item-input champsFormLogin">
+          <span class="input-label placeholderText">Mot de passe</span>
           <input type="password" ng-model="loginData.password">
         </label>
-        <label class="item">
-          <button class="button button-block button-positive" type="submit">Log in</button>
+        <label class="item BorderLess">
+          <a style="text-decoration : none;" href="#/app/"><button class="button button-block button-positive boutonForm" type="submit">Se connecter</button></a>
         </label>
       </div>
+   <!--</form>-->
+    <div class="ou">
+      <p align="center">OU</p>
+    </div>
+    <!--Lien vers le formulaire d'inscription -->
+    <form ng-submit="">
+        <label class="item BorderLess" id="inscriptionButton">
+          <button class="button button-block button-positive boutonForm" type="submit">S'inscrire</button>
+        </label>
     </form>
+
+    <!-- Mot de passe oublié -->
+    <div class="hide-on-keyboard-open">  
+      <div id="forgottenPwd">
+        <center><a>Mot de passe oublié</a></center>
+      </div>
+    </div>
   </ion-content>
-</ion-modal-view>
+</ion-view>
