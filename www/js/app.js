@@ -108,6 +108,24 @@ angular.module('starter', ['ionic', 'starter.controllers', 'test.controllers'])/
       }
     })
 
+  .state('app.mon_profil', {
+      url: '/mon_profil',
+      views: {
+        'menuContent': {
+          templateUrl: 'views/mon_profil.html'
+        }
+      }
+    })
+
+  .state('app.choix', {
+      url: '/choix',
+      views: {
+        'menuContent': {
+          templateUrl: 'views/choix.html'
+        }
+      }
+    })
+
   .state('app.choix_action', {
       url: '/choix_action',
       views: {
