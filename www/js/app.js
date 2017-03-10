@@ -7,7 +7,7 @@
 angular.module('starter', ['ionic', 'starter.controllers', 'test.controllers'])//rajouter ici les nouveaux controllers
 
 .run(function($ionicPlatform, user) {
-  user.login("Thibaut", "monMotDePasse");
+  user.login("", ""); //c'est ici qu'on passe les infos du user pour la connexion
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
@@ -54,15 +54,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'test.controllers'])/
         }
       }
     })
-	//page detail historique
-	.state('app.detail_historique', {
-    url: '/detail_historique',
-    views: {
-      'menuContent': {
-        templateUrl: 'views/detail_historique.html'
-      }
-    }
-  })
   
   //page detail ajout_commentaire
 	.state('app.ajout_commentaire', {
@@ -198,15 +189,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'test.controllers'])/
     }
   })
 
-  .state('app.compte_user', {
-      url: '/compte_user',
-      views: {
-        'menuContent': {
-          templateUrl: 'views/compte_user.html'
-        }
-      }
-    })
-
   .state('app.inscription', {
       url: '/inscription',
       views: {
@@ -230,15 +212,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'test.controllers'])/
       views: {
         'menuContent': {
           templateUrl: 'views/choix.html'
-        }
-      }
-    })
-
-  .state('app.choix_action', {
-      url: '/choix_action',
-      views: {
-        'menuContent': {
-          templateUrl: 'views/choix_action.html'
         }
       }
     })

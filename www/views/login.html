@@ -1,6 +1,5 @@
 <ion-view view-title="Login" id="loginView" hide-nav-bar="true">
-  <ion-content >
-    
+  <ion-content >  
     <!-- logo -->
     <center>
       <div id="logoHome">
@@ -15,13 +14,13 @@
       <div class="list loginForm">
         <label class="item item-input champsFormLogin">
           <span class="input-label placeholderText">Login</span>
-          <input type="text" ng-model="loginData.username">
+          <input class="inputLogin" type="text" ng-model="loginData.username">
         </label>
         <label class="item item-input champsFormLogin">
           <span class="input-label placeholderText">Mot de passe</span>
-          <input type="password" ng-model="loginData.password">
+          <input class="inputLogin" type="password" ng-model="loginData.password">
         </label>
-        <label class="item BorderLess">
+        <label class="item BorderLess boutonsLogin">
           <a style="text-decoration : none;" href="#/app/"><button class="button button-block button-positive boutonForm" type="submit">Se connecter</button></a>
         </label>
       </div>
@@ -31,7 +30,7 @@
     </div>
     <!--Lien vers le formulaire d'inscription -->
     <form ng-submit="">
-        <label class="item BorderLess" id="inscriptionButton">
+        <label class="item BorderLess inscriptionButton">
           <button class="button button-block button-positive boutonForm" type="submit">S'inscrire</button>
         </label>
     </form>
