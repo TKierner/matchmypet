@@ -1,0 +1,31 @@
+<ion-view view-title="Ajout annonces">
+  <ion-content>
+    <div class="contenu_ajout_animal">
+      <h4>LAISSER UN AVIS</h4>
+    
+    <div class="row imgcomment">
+        <div class="col col-100">
+            <img ng-src="../img/laisser_commentaire/chien-commentaire.jpg">
+        </div>
+    </div>
+    <form class ="formanimal formaddcomment" g-submit="doLogin()">
+      <div class="list">
+        <label class="item item-input item-stacked-label">
+			<div><img class="imgformtache" ng-src="../img/laisser_commentaire/star_couleur.png">Expérience globale</div>
+			 <input class="placeholdercomment" type="number" name="age" min="1" max="5" placeholder="Note">
+			<!-- <input type="text" ng-model="loginData.username">-->
+		</label>
+      
+		<label class="item item-input item-stacked-label">
+            <div><img class="imgformtache" ng-src="../img/laisser_commentaire/star_couleur.png">Commentaire</div>
+			 <textarea class="placeholdercomment" placeholder="Donnez votre avis sur l'animal, le propriétaire"></textarea>
+			<!-- <input type="text" ng-model="loginData.username">-->
+		</label>
+        <label class="item">
+          <button class="button button-block button-positive boutons" type="submit">POSTER LE COMMENTAIRE</button>
+        </label>
+      </div>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>

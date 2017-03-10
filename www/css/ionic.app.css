@@ -9818,8 +9818,14 @@ a.button {
 body h1 {
   color: blue; }
 
+body h4 {
+  color: #ef473a;
+  text-align: center;
+  margin-top: 8px !important; }
+
 body img {
   width: 100%; }
+
 
 .item {
   background: transparent; }
@@ -9990,3 +9996,385 @@ body img {
 .consulterHistorique a {
   text-decoration: none;
   color: #ffffff; }
+=======
+.contenu_ajout_animal {
+  margin-top: 50px; }
+
+.contenu_ajout_animal h4 {
+  padding-top: 10px; }
+
+.contenu_ajout_animal .item-input input.special {
+  width: 86%;
+  float: right; }
+
+.contenu_ajout_animal .imgformtache {
+  width: 25px;
+  margin-right: 16px;
+  margin-bottom: -6px; }
+
+.contenu_ajout_animal .imgform {
+  width: 25px;
+  margin-bottom: -10px; }
+
+.contenu_ajout_animal input[type="date"] {
+  display: inline !important;
+  margin-left: 32%; }
+
+.btnupload {
+  margin: auto;
+  border: none;
+  border: 2px solid transparent;
+  border-image: linear-gradient(to right, #ffb56e 0%, #ff6d6e 100%);
+  border-image-slice: 1;
+  text-align: center;
+  font-size: 20px;
+  overflow: hidden; }
+
+.thumbnail {
+  width: 100%; }
+
+input[type=file] {
+  opacity: 0 !important;
+  width: 100%; }
+
+.contenu_ajout_animal input[type=file] {
+  opacity: 0 !important;
+  width: 100%; }
+
+.formanimal .item-input {
+  width: 84%;
+  margin: auto;
+  border: none;
+  border-bottom: 2px solid #bebebe; }
+
+.formanimal .toggle {
+  position: absolute;
+  margin-top: 1px;
+  margin-left: 40%; }
+
+.formanimal .tache {
+  padding-bottom: 12px;
+  padding-top: 8px; }
+
+.button.button-positive {
+  background-color: #ef473a;
+  border-radius: 20px;
+  width: 70%;
+  margin: auto;
+  margin-top: 15px; }
+
+.bar.bar-header {
+  background: linear-gradient(to right, #ffb56e 0%, #ff6d6e 100%); }
+
+.bar-header {
+  height: 50px; }
+
+.iconemenu {
+  width: 42% !important;
+  margin-top: -5%; }
+
+.iconemenu2 {
+  width: 76% !important;
+  margin-top: -5%; }
+
+.button.button-icon.button-clear.ion-navicon {
+  color: white; }
+
+.logo {
+  margin-left: 30%; }
+
+input::-webkit-input-placeholder {
+  color: black;
+  opacity: 1;
+  font-size: 16px; }
+
+*:-moz-placeholder {
+  color: black;
+  opacity: 1; }
+
+*:-ms-input-placeholder {
+  /* IE10+ */
+  color: black;
+  opacity: 1; }
+
+.input-label {
+  color: black; }
+
+.imgaccueil {
+  width: 100%; }
+
+.choix_animaux {
+  margin-top: 50px; }
+
+.choix_animaux .col-50 {
+  padding: 0 !important; }
+
+.choix_animaux .row {
+  padding: 0 !important; }
+
+.bar-stable.menu-header {
+  background: linear-gradient(to right, #ff6d6e 0%, #ffb56e 100%); }
+
+.bar.bar-stable .title {
+  text-align: center;
+  color: white; }
+
+.recherche_simplifiee .col {
+  padding: 0; }
+
+.recherche_simplifiee .row {
+  padding: 0; }
+
+#recherchechien1 {
+  background-image: url("../img/recherche-intuitive/chien-garde.jpg");
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#recherchechien2 {
+  background-image: url("../img/recherche-intuitive/chien-chasse.jpg");
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#recherchechien3 {
+  background-image: url("../img/recherche-intuitive/chien-berger.jpg");
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+/*#recherchechien4{
+    background-image: url("../img/recherche-intuitive/chien-course.jpg");
+    height: 200px;
+}*/
+#recherchechien1 h2, #recherchechien2 h2, #recherchechien3 h2, #recherchechien4 h2 {
+  padding-top: 25%;
+  text-align: center;
+  color: white; }
+
+.degrade-search {
+  background: linear-gradient(to right, #ffb56e 0%, #ff6d6e 100%); }
+  .degrade-search img {
+    width: 68px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 5px; }
+  .degrade-search p {
+    padding-top: 20px;
+    color: white;
+    font-size: 1.2em;
+    text-align: left; }
+
+.ligne-paiement {
+  background: linear-gradient(to right, #ffb56e 0%, #ff6d6e 100%);
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  line-height: 30px; }
+  .ligne-paiement p {
+    color: white;
+    font-size: 1.5em; }
+  .ligne-paiement p.right {
+    text-align: right;
+    padding-right: 10px; }
+  .ligne-paiement p.left {
+    padding-left: 10px; }
+
+.indications {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px; }
+  .indications p {
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 10px; }
+
+.ligne-paiement2 {
+  background: linear-gradient(to right, #ffb56e 0%, #ff6d6e 100%);
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  line-height: 30px; }
+  .ligne-paiement2 p {
+    color: white;
+    font-size: 1.5em; }
+  .ligne-paiement2 p.right {
+    text-align: right;
+    padding-right: 10px; }
+  .ligne-paiement2 p.left {
+    padding-left: 10px; }
+
+.row.ligne-paiement2 {
+  margin-top: 10px; }
+
+img.icone-paiement {
+  width: 80%;
+  padding-top: 5px; }
+
+img.icone-fleche {
+  width: 100%;
+  padding-top: 5px; }
+
+.paimentform .item-input {
+  width: 84%;
+  margin: auto;
+  border: none;
+  border-bottom: 2px solid #bebebe; }
+
+.paimentform .item p {
+  color: black;
+  font-weight: 500;
+  font-size: 1.2em;
+  margin-left: -10px; }
+
+.paimentform .button {
+  background-color: white; }
+
+.btnpaypal {
+  background: linear-gradient(to right, #ffb56e 0%, #ff6d6e 100%);
+  width: 50% !important;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px; }
+  .btnpaypal img {
+    padding-top: 10px; }
+  .btnpaypal p {
+    text-align: center;
+    color: white !important;
+    font-size: 1.3em;
+    font-weight: normal;
+    margin-bottom: 0; }
+
+.row.btnpaypal {
+  margin-top: 20px;
+  margin-bottom: 10px; }
+
+.btnenregistrercb .item-input {
+  border: none;
+  font-size: 1em; }
+
+.row.mesannonces {
+  padding: 0; }
+
+.col.colannonces {
+  padding: 0; }
+
+p.nomchien {
+  color: black;
+  font-weight: 500;
+  font-size: 1.2em;
+  text-align: center; }
+
+p.infoschien {
+  color: black;
+  font-weight: normal;
+  font-size: 1.2em;
+  padding-left: 10px; }
+
+.imgplus {
+  width: 30%;
+  float: right;
+  position: relative;
+  top: -75px;
+  right: 25px; }
+
+.row.imgcomment {
+  padding: 0; }
+
+.imgcomment .col {
+  padding: 0; }
+
+.formaddcomment .textaddcomment {
+  font-size: 16px;
+  padding-bottom: 12px;
+  padding-top: 8px; }
+
+.formaddcomment .item-input textarea {
+  font-size: 16px;
+  color: grey;
+  padding-top: 10px; }
+
+.formaddcomment .item-input input[type="number"] {
+  font-size: 16px;
+  color: grey;
+  padding-top: 10px; }
+
+.formaddcomment input[type="number"] ::placeholder {
+  color: grey !important; }
+
+.boutons {
+  background: linear-gradient(to right, #ffb56e 0%, #ff6d6e 100%); }
+
+.item {
+  border: none; }
+
+/*.container {
+  margin: 50px auto;
+  width: 120px;
+}*/
+.switch {
+  position: relative;
+  margin: 20px auto;
+  height: 40px;
+  width: 200px;
+  background: white;
+  border-radius: 20px;
+  border: 1px solid #bebebe; }
+
+.switch-label {
+  position: relative;
+  z-index: 2;
+  float: left;
+  width: 99px;
+  line-height: 38px;
+  font-size: 1.2em;
+  color: black;
+  text-align: center;
+  cursor: pointer; }
+
+.switch-label-off {
+  padding-left: 2px; }
+
+.switch-label-on {
+  padding-right: 2px; }
+
+/*
+  Note: using adjacent or general sibling selectors 
+  combined with pseudo classes doesn't work in Safari 
+  5.0 and Chrome 12.
+  See this article for more info and a potential fix: 
+  http://css-tricks.com/webkit-sibling-bug/
+*/
+.switch-input {
+  display: none; }
+
+.switch-input:checked + .switch-label {
+  color: white;
+  -webkit-transition: 0.15s ease-out;
+  -moz-transition: 0.15s ease-out;
+  -o-transition: 0.15s ease-out;
+  transition: 0.15s ease-out; }
+
+.switch-input:checked + .switch-label-on ~ .switch-selection {
+  /* Note: left: 50% doesn't transition in WebKit */
+  left: 100px; }
+
+.switch-selection {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  background: linear-gradient(to right, #ffb56e 0%, #ff6d6e 100%);
+  -webkit-transition: left 0.15s ease-out;
+  -moz-transition: left 0.15s ease-out;
+  -o-transition: left 0.15s ease-out;
+  transition: left 0.15s ease-out; }
+
