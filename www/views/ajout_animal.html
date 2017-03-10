@@ -5,20 +5,17 @@
 
 	<form class ="formanimal" g-submit="doLogin()">
 		<div class="row labelupload">
-			<div class="col col-33 btnupload">
-				<label for="upload" class="thumbnail">+
-				<input type="file" name="upload" id="uploadimga" class="inputfile" />
-				</label>
+			<div class="col col-32 btnupload">
+				<input type="file" name="upload" class="inputfile"/>
+                <p>+</p>
 			</div>
-			<div class="col col-33 btnupload">
-				<label for="upload" class="thumbnail">+
-					<input type="file" name="upload" id="uploadimgb" class="inputfile" />
-				</label>
+			<div class="col col-32 btnupload">
+				<input type="file" name="upload" class="inputfile" />
+				<p>+</p>
 			</div>
-			<div class="col col-33 btnupload">
-				<label for="upload" class="thumbnail">+
-					<input type="file" name="upload" id="uploadimgc" class="inputfile" />
-				</label>
+			<div class="col col-32 btnupload">
+				<input type="file" name="upload" class="inputfile" />
+				<p>+</p>
 			</div>
 		</div>
       <div class="list">
@@ -63,7 +60,10 @@
 		<!--</label>-->
 		  <label for="upload" class="item item-input item-stacked-label thumbnail">
 			  <img class="imgform" ng-src="../img/icones_formulaires/pedigree.png">Pedigree
-			  <div class="btnpedigree"><input type="file" name="upload" id="uploadimga" class="inputfile" /></div>
+			  <div class="btnpedigree">
+              <input type="file" name="upload" id="uploadimga" class="inputfile" />
+              <p>+</p>
+              </div>
 		  </label>
 		<label class="item item-input item-stacked-label">
 			<img class="imgform" ng-src="../img/icones_formulaires/couleur_yeux.png">
@@ -98,7 +98,7 @@
 			<!-- <input type="text" ng-model="loginData.username">-->
 		</label>
         <label class="item">
-          <button class="button button-block button-positive" type="submit">CONNEXION</button>
+          <button class="button button-block button-positive btnform" type="submit">CONNEXION</button>
         </label>
       </div>
     </form>
