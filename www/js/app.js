@@ -33,6 +33,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'test.controllers'])/
     controller: 'AppCtrl'
   })
 	
+  //Page de connexion
+  .state('app.login', {
+      url: '/login',
+      views:  {
+        'menuContent': {
+          templateUrl: 'views/login.html',
+          controller: 'AppCtrl' 
+        }
+      }
+  })
+
 	//création de la nouvelle page test
   .state('app.annonces_enregistrees', {
       url: '/annonces_enregistrees',
@@ -158,6 +169,51 @@ angular.module('starter', ['ionic', 'starter.controllers', 'test.controllers'])/
         }
       }
     })
+
+  .state('app.compte_user', {
+      url: '/compte_user',
+      views: {
+        'menuContent': {
+          templateUrl: 'views/compte_user.html'
+        }
+      }
+    })
+
+  .state('app.inscription', {
+      url: '/inscription',
+      views: {
+        'menuContent': {
+          templateUrl: 'views/inscription.html'
+        }
+      }
+    })
+
+  .state('app.mon_profil', {
+      url: '/mon_profil',
+      views: {
+        'menuContent': {
+          templateUrl: 'views/mon_profil.html'
+        }
+      }
+    })
+
+  .state('app.choix', {
+      url: '/choix',
+      views: {
+        'menuContent': {
+          templateUrl: 'views/choix.html'
+        }
+      }
+    })
+
+  .state('app.choix_action', {
+      url: '/choix_action',
+      views: {
+        'menuContent': {
+          templateUrl: 'views/choix_action.html'
+        }
+      }
+    })
     /*.state('app.playlists', {
       url: '/playlists',
       views: {
@@ -179,5 +235,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'test.controllers'])/
   })*/;
   
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/app/mes_annonces'); //page sur lauelle on tombe au départ
+  $urlRouterProvider.otherwise('/app/login'); //page sur lauelle on tombe au départ
 });
+
