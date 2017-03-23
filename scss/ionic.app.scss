@@ -78,10 +78,8 @@ body{
 
 .btnupload{
 	margin:5px;
-    height:100px;
-    position:relative;
-.btnupload{
-	margin: auto;
+  height:100px;
+  position:relative;
 	border: none;
 	border: 2px solid transparent;
 	border-image: linear-gradient(to right, #ffb56e 0%, #ff6d6e 100%);
@@ -113,6 +111,10 @@ body{
     margin-right:10px;
     float:right;
     height:30px;
+}
+
+#labelPedigree {
+  margin-left : 2%;
 }
 
 .btnpedigree input[type=file]{

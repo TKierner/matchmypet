@@ -3502,7 +3502,7 @@ ion-infinite-scroll {
     overflow-y: scroll; }
   .overflow-scroll .scroll {
     position: static;
-    height: 100%;
+    height: 92%;
     -webkit-transform: translate3d(0, 0, 0); }
 
 /* If you change these, change platform.scss as well */
@@ -5279,6 +5279,10 @@ ion-tabs.tabs-striped.tabs-color-active-dark .tab-item.tab-item-active, ion-tabs
     z-index: 10; }
   .menu .bar-header {
     z-index: 11; }
+
+.rowMenu {
+  padding : 5px;
+}
 
 .menu-content {
   -webkit-transform: none;
@@ -9064,7 +9068,7 @@ a.button {
   display: -moz-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 5px;
+  /*padding: 5px;*/
   width: 100%; }
 
 .row-wrap {
@@ -9090,7 +9094,7 @@ a.button {
   -ms-flex: 1;
   flex: 1;
   display: block;
-  padding: 5px;
+  /*padding: 5px;*/
   width: 100%; }
 
 /* Vertically Align Columns */
@@ -9843,8 +9847,8 @@ body img {
 
 .BorderLess {
   border: none;
-  padding-left: 25%;
-  padding-right: 25%;
+  /*padding-left: 25%;
+  padding-right: 25%;*/
   padding-top: 3%; }
 
 .boutonForm {
@@ -9906,11 +9910,15 @@ body img {
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: solid 2px white;
+  border-bottom: solid 2px white !important;
   margin-left: 10%; }
 
+.inputLogin {
+  color : white !important;
+}
+
 .placeholderText {
-  color: white; }
+  color: white !important; }
 
 #logoHome {
   padding-top: 3%;
@@ -9925,6 +9933,14 @@ body img {
   border-right: none;
   margin-left: 10%;
   border-bottom: 2px solid #bebebe; }
+
+.boutonsLogin {
+  padding-bottom : 0;
+}
+
+.inscriptionButton {
+  padding-top : 0;
+}
 
 #choix1 {
   background-image: url("../img/choix/choix1.jpg");
@@ -10014,6 +10030,11 @@ body img {
   margin-right: 16px;
   margin-bottom: -6px; }
 
+.contenu_ajout_animal .imgformtacheBis {
+  width: 25px;
+  margin-right: 12%;
+  margin-bottom: -6px; }
+
 .contenu_ajout_animal .imgform {
   width: 25px;
   margin-bottom: -10px; }
@@ -10027,7 +10048,6 @@ body img {
   margin: 5px;
   height: 100px;
   position: relative;
-  margin: auto;
   border: none;
   border: 2px solid transparent;
   border-image: linear-gradient(to right, #ffb56e 0%, #ff6d6e 100%);
@@ -10056,6 +10076,11 @@ body img {
   margin-right: 10px;
   float: right;
   height: 30px; }
+
+#labelPedigree {
+  margin-left : 4.5%;
+  margin-top : 10%;
+}
 
 .btnpedigree input[type=file] {
   height: 30px;
@@ -10198,12 +10223,21 @@ input::-webkit-input-placeholder {
 .coliconl {
   margin-left: 10px; }
 
+.rowdetailavecicon {
+  padding : 5px;
+}
+
+.col-new-padding {
+  padding : 5px;
+}
+
 .rowdetailavecicon p {
   font-size: 1.2em;
   padding-left: 10px; }
 
 .rowdetailnote {
-  margin-left: 10px; }
+  margin-left: 10px;
+  padding : 5px; }
   .rowdetailnote p {
     font-size: 1.2em;
     padding-left: 10px; }
@@ -10219,9 +10253,19 @@ input::-webkit-input-placeholder {
     width: 34%;
     margin-top: -4px; }
   .btnajoutpanier p {
-=======
+    text-align: center;
+    color :white !important;
+    font-size : 1.3em;
+    font-weight : normal;
+    margin-bottom : 0;
+    padding-left : 16px;
+  }
 .recherche_simplifiee .col {
   padding: 0; }
+
+.rowBtnPanier {
+  padding : 5px;
+}
 
 .recherche_simplifiee .row {
   padding: 0; }
@@ -10254,18 +10298,21 @@ input::-webkit-input-placeholder {
   color: white; }
 
 .degrade-search {
-  background: linear-gradient(to right, #ffb56e 0%, #ff6d6e 100%); }
-  .degrade-search img {
-    width: 68px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 5px; }
-  .degrade-search p {
-    padding-top: 20px;
-    color: white;
-    font-size: 1.2em;
-    text-align: left; }
+  background: linear-gradient(to right, #ffb56e 0%, #ff6d6e 100%); 
+}
+.degrade-search img {
+  width: 68px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 5px; 
+}
+.degrade-search p {
+  padding-top: 20px;
+  color: white;
+  font-size: 1.2em;
+  text-align: left; 
+}
 
 .ligne-paiement {
   background: linear-gradient(to right, #ffb56e 0%, #ff6d6e 100%);
@@ -10273,7 +10320,9 @@ input::-webkit-input-placeholder {
   margin-left: auto;
   margin-right: auto;
   height: 50px;
-  line-height: 30px; }
+  line-height: 30px; 
+  padding : 5px;
+}
   .ligne-paiement p {
     color: white;
     font-size: 1.5em; }
@@ -10287,7 +10336,9 @@ input::-webkit-input-placeholder {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5px; }
+  margin-top: 5px;
+  padding : 5px;
+}
   .indications p {
     font-size: 1.2em;
     text-align: center;
@@ -10299,7 +10350,9 @@ input::-webkit-input-placeholder {
   margin-left: auto;
   margin-right: auto;
   height: 50px;
-  line-height: 30px; }
+  line-height: 30px;
+  padding : 5px;
+}
   .ligne-paiement2 p {
     color: white;
     font-size: 1.5em; }
@@ -10340,17 +10393,21 @@ img.icone-fleche {
   width: 50% !important;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 10px; }
+  border-radius: 10px;
+  padding :5px;
+}
   .btnpaypal img {
-    padding-top: 10px; }
-  .btnpaypal p {
+    padding-top: 10px; 
+  }
 
+  .btnpaypal p {
     text-align: center;
     color: white !important;
     font-size: 1.3em;
     font-weight: normal;
     margin-bottom: 0;
-    padding-left: 16px; }
+    padding-left: 16px; 
+  }
     
   .btnajoutpanier h3 {
     padding-top: 5px;
