@@ -9897,7 +9897,7 @@ body img {
   border-left: none;
   border-right: none;
   margin-left: 10%;
-  border-bottom: 2px solid #bebebe; }
+  border-bottom: 2px solid #bebebe !important; }
 
 .champsProfil p {
   width: 66%; }
@@ -9981,8 +9981,8 @@ body img {
   color: #ffffff;
   font-size: large; }
 
-#passwordApp {
-  color: #ffb56e; }
+/*#passwordApp {
+  color: #ffb56e; }*/
 
 .chien {
   height: 25%;
@@ -10163,7 +10163,9 @@ input::-webkit-input-placeholder {
   color: black; }
 
 .imgaccueil {
-  width: 100%; }
+  width: 100%;
+  height : 100%;
+}
 
 .choix_animaux {
   margin-top: 50px; }
@@ -10495,7 +10497,7 @@ p.infoschien {
 
 .formaddcomment .item-input input[type="number"] {
   font-size: 16px;
-  color: grey;
+  color: grey !important;
   padding-top: 10px; }
 
 .formaddcomment input[type="number"] ::placeholder {
