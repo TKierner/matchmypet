@@ -39,7 +39,7 @@
     </div>
     <div class="row rowdetailavecicon">
         <div class="col col-10 coliconl col-new-padding"><img ng-src="img/détail_animal/bulles.png"></div>
-        <div class="col col-70 col-new-padding"><p>Contacter le propriétaire</p></div>
+        <a class="choixLink" href="#/app/ajout_commentaire"><div class="col col-70 col-new-padding"><p>Contacter le propriétaire</p></div></a>
         <div class="col col-10 coliconr col-new-padding"><img ng-src="img/détail_animal/fleche.png"></div>
          <div class="col col-10 col-new-padding"></div>
     </div>
@@ -51,13 +51,13 @@
         <div class="col col-10 col-new-padding"><img ng-src="img/détail_animal/star.png"></div>
         <div class="col col-50 col-new-padding"><p>4/5</p></div>
     </div>
-    <div class="btnajoutpanier">
+      <a class="choixLink" href="#/app/paiement"><div class="btnajoutpanier">
     	<h3>850€</h3>
     	<div class="row rowbtnajoutpanier rowBtnPanier">
        		<div class="col-80 col-new-padding"><p>AJOUTER AU PANIER</p></div>
        		<div class="col-20 col-new-padding"><img ng-src="img/icones_menu/panier.png"></div>
     	</div>
-    </div>
+      </div></a>
     <div class="commentaires">
         <h3>Commentaires</h3>
         <div class="comment">
@@ -73,5 +73,10 @@
             </div>-->
         </div>
     </div>
+      <!--<a class="choixLink" href="#/app/ajout_commentaire">-->
+         <!--<div class="button button-block button-positive btnform">-->
+              <!--AJOUTER UN COMMENTAIRE-->
+          <!--</div>-->
+      <!--</a>-->
   </ion-content>
 </ion-view>

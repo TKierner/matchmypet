@@ -3707,7 +3707,7 @@ address {
   line-height: 1.42857; }
 
 a {
-  color: #387ef5; }
+  color: black; }
 
 a.subdued {
   padding-right: 10px;
@@ -9973,6 +9973,12 @@ body img {
 
 .pictoProfil {
   width: 15%;
+  height: 15%;
+  margin-left: -5%;
+  margin-right: 5%; }
+
+.pictoProfil2 {
+  width: 10%;
   height: 15%;
   margin-left: -5%;
   margin-right: 5%; }

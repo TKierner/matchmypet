@@ -66,6 +66,26 @@ angular.module('starter', ['ionic', 'starter.controllers'])//rajouter ici les no
       }
     }
   })
+
+    //page profil chien
+      .state('app.profil_chien', {
+          url: '/profil_chien',
+          views: {
+              'menuContent': {
+                  templateUrl: 'views/profil_chien.html'
+              }
+          }
+      })
+
+      //page resultat recherche
+      .state('app.resultat_recherche', {
+          url: '/resultat_recherche',
+          views: {
+              'menuContent': {
+                  templateUrl: 'views/resultat_recherche.html'
+              }
+          }
+      })
   
   //page formulaire recherche
 	.state('app.formulaire_recherche', {
@@ -83,16 +103,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])//rajouter ici les no
     views: {
       'menuContent': {
         templateUrl: 'views/paiement.html'
-      }
-    }
-  })
-  
-  //page annonces
-	.state('app.annonces', {
-    url: '/annonces',
-    views: {
-      'menuContent': {
-        templateUrl: 'views/annonces.html'
       }
     }
   })

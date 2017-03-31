@@ -1,34 +1,36 @@
-<!--<ion-view view-title="Annonces enregistrées">
-  <ion-content>
-    <h1>{{ name }}</h1> on appelle les valeurs qui sont présentes dans le controlleur
-	<img src="{{ urlimg }}"> on appelle les valeurs qui sont présentes dans le controlleur 
-	
-	<div class="bar bar-footer bar-positive">
-	  <div class="title">Match My Pet</div>
-	</div>
-  </ion-content>
-</ion-view> -->
+<ion-view view-title="Mes annonces">
+	<ion-content>
+		<div class="contenu_ajout_animal">
+			<h4>MES ANIMAUX</h4>
+		</div>
 
-<!--<ion-view view-title="{{title}}">
-  <ion-content>
-    <h1>{{title}}</h1> <!--on appelle les valeurs qui sont présentes dans le controlleur 
-	<a href="{{url}}">{{url}}</a> <!--on appelle les valeurs qui sont présentes dans le controlleur
-	
-	<div class="bar bar-footer bar-positive">
-	  <div class="title">Match My Pet</div>
-	</div>
-  </ion-content>
-</ion-view>-->
-
-<ion-view view-title="{{title}}">
-  <ion-content>
-   
-  	<div ng-bind-html="html"></div>
-  	{{ json.title }}
-
-	<div class="bar bar-footer bar-positive">
-	  <div class="title">Match My Pet</div>
-	</div>
-  </ion-content>
+		<div class="row mesannonces">
+			<div class="col col-50 colannonces">
+				<img ng-src="img/mes_annonces/chien1.jpg">
+				<p class="nomchien">Médor</p>
+				<p class="infoschien">3 ans</p>
+				<p class="infoschien">Labrador</p>
+				<p class="infoschien">Lofté</p>
+				<img class="imgplus" ng-src="img/mes_chiens/croixbis.png">
+			</div>
+			<div class="col col-50 colannonces">
+				<img ng-src="img/mes_annonces/chien2.jpg">
+				<p class="nomchien">Sparky</p>
+				<p class="infoschien">4 ans</p>
+				<p class="infoschien">Labrador</p>
+				<p class="infoschien">Non lofté</p>
+				<img class="imgplus" ng-src="img/mes_chiens/croixbis.png">
+			</div>
+		</div>
+		<div class="row mesannonces">
+			<div class="col col-50 colannonces">
+				<img ng-src="img/mes_annonces/chien3.jpg">
+				<p class="nomchien">Marley</p>
+				<p class="infoschien">6 ans</p>
+				<p class="infoschien">Labrador</p>
+				<p class="infoschien">Lofté</p>
+				<img class="imgplus" ng-src="img/mes_chiens/croixbis.png">
+			</div>
+		</div>
+	</ion-content>
 </ion-view>
-
