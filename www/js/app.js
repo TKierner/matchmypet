@@ -4,10 +4,12 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'test.controllers'])//rajouter ici les nouveaux controllers
+angular.module('starter', ['ionic', 'starter.controllers'])//rajouter ici les nouveaux controllers
 
-.run(function($ionicPlatform, user) {
-  user.login("", ""); //c'est ici qu'on passe les infos du user pour la connexion
+.run(function($ionicPlatform, user, $rootScope) {
+
+  $rootScope.navHider = true;
+  //user.login("", ""); //c'est ici qu'on passe les infos du user pour la connexion
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
@@ -50,7 +52,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'test.controllers'])/
       views: {
         'menuContent': {
           templateUrl: 'views/annonces_enregistrees.html',
-          controller: 'TestCtrl'
+          controller: 'AppCtrl'
         }
       }
     })

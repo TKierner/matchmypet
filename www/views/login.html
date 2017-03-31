@@ -1,4 +1,4 @@
-<ion-view view-title="Login" id="loginView" hide-nav-bar="true">
+<ion-view view-title="Login" id="loginView" >
   <ion-content >  
     <!-- logo -->
     <center>
@@ -10,29 +10,29 @@
     </center>
 
     <!-- formulaire de connexion -->
-    <!--<form ng-submit="">-->
+      <form ng-click="logIn($loginData)" ng-controller="AppCtrl">
       <div class="list loginForm">
         <label class="item item-input champsFormLogin">
           <span class="input-label placeholderText">Login</span>
-          <input class="inputLogin" type="text" ng-model="loginData.username">
+          <input class="inputLogin" type="text" ng-model="loginData.usermail">
         </label>
         <label class="item item-input champsFormLogin">
           <span class="input-label placeholderText">Mot de passe</span>
-          <input class="inputLogin" type="password" ng-model="loginData.password">
+          <input class="inputLogin" type="password" ng-model="loginData.userpwd">
         </label>
         <label class="item BorderLess boutonsLogin">
-          <a style="text-decoration : none;" href="#/app/"><button class="button button-block button-positive boutonForm" type="submit">Se connecter</button></a>
+          <button class="button button-block button-positive boutonForm" type="submit">Se connecter</button>
         </label>
       </div>
-   <!--</form>-->
+    </form>
+  </br>
     <div class="ou">
       <p align="center">OU</p>
     </div>
     <!--Lien vers le formulaire d'inscription -->
-    <form ng-submit="">
-        <label class="item BorderLess inscriptionButton">
-          <button class="button button-block button-positive boutonForm" type="submit">S'inscrire</button>
-        </label>
+    <label class="item BorderLess inscriptionButton">       
+      <button class="button button-block button-positive boutonForm">S'inscrire</button>
+    </label>
     </form>
 
     <!-- Mot de passe oublié -->
@@ -43,3 +43,5 @@
     </div>
   </ion-content>
 </ion-view>
+
+<!--<a style="text-decoration : none;" href="#/app/"></a>-->

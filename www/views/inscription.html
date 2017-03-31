@@ -1,38 +1,38 @@
 <ion-view view-title="Inscription">
   <ion-content>
   <div class="contenu_ajout_animal"></div>
-	<form class="formulairesApp">
+	<form class="formulairesApp" ng-submit="signIn($userA)" ng-controller="AppCtrl">
       <label class="item item-input champsFormInscription">
         <img class="pictoProfil" src="img/picto_user/utilisateur.png">
-        <input type="text" placeholder="Nom">
+        <input type="text" placeholder="Nom" ng-model="userA.nomU">
       </label>
       <label class="item item-input champsFormInscription">
         <img class="pictoProfil" src="img/picto_user/utilisateur.png">
-        <input type="text" placeholder="Prénom">
+        <input type="text" placeholder="Prénom" ng-model="userA.prenomU">
       </label>
       <label class="item item-input champsFormInscription">
         <img class="pictoProfil" src="img/picto_user/mail.png">
-        <input type="text" placeholder="Email">
+        <input type="text" placeholder="Email" ng-model="userA.mailU">
       </label>
       <label class="item item-input champsFormInscription">
         <img class="pictoProfil" src="img/picto_user/cadenas.png">
-        <input type="password" placeholder="Mot de passe">
+        <input type="password" placeholder="Mot de passe" ng-model="userA.mdpU">
       </label>
       <label class="item item-input champsFormInscription">
         <img class="pictoProfil" src="img/picto_user/rue.png">
-        <input type="text" placeholder="Rue">
+        <input type="text" placeholder="Rue" ng-model="userA.rueU">
       </label>
       <label class="item item-input champsFormInscription">
         <img class="pictoProfil" src="img/picto_user/ville.png">
-        <input type="text" placeholder="Ville">
+        <input type="text" placeholder="Ville" ng-model="userA.villeU">
       </label>
       <label class="item item-input champsFormInscription">
         <img class="pictoProfil" src="img/picto_user/codepostal.png">
-        <input type="text" placeholder="Code postal">
+        <input type="number" placeholder="Code postal" ng-model="userA.codepostalU">
       </label>
       <label class="item item-input champsFormInscription">
         <img class="pictoProfil" src="img/picto_user/telephone.png">
-        <input type="text" placeholder="Téléphone">
+        <input type="number" placeholder="Téléphone" ng-model="userA.telephoneU">
       </label>
       <label class="item BorderLess">
         <button class="button button-block button-positive boutonForm" type="submit">S'INSCRIRE</button>

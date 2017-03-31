@@ -19,7 +19,7 @@
   </ion-side-menu-content>-->
   
   <ion-side-menu-content>
-  <div class="bar bar-header">
+  <div class="bar bar-header" ng-hide="navHider">
   <div class="row rowMenu">
   <div class="col-20 col-new-padding">
     <button class="button button-icon button-clear ion-navicon iconemenu" menu-toggle="left">
@@ -48,7 +48,7 @@
     </ion-header-bar>
     <ion-content>
       <ion-list>
-        <ion-item menu-close ng-click="login()">
+        <ion-item menu-close href="#/app/login">
           Login
         </ion-item>
         <ion-item menu-close href="#/app/mes_annonces">
