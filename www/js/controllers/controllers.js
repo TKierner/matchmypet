@@ -1,6 +1,6 @@
 angular.module('starter.controllers', [])
 
-.controller('AppCtrl', function($rootScope, $scope , $http, $state) {
+.controller('AppCtrl', function($rootScope, $scope , $http, $state, $window) {
 
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
@@ -12,17 +12,18 @@ angular.module('starter.controllers', [])
 
   $scope.signIn = function (userA){
 
-    //console.log($scope.userA);
-    var user = {
-      nom : $scope.userA.nomU,
-      prenom : $scope.userA.prenomU,
-      mdp : $scope.userA.mdpU,
-      mail : $scope.userA.mailU,
-      telephone : parseInt($scope.userA.telephoneU),
-      rue : $scope.userA.rueU,
-      ville : $scope.userA.villeU,
-      codepostal : parseInt($scope.userA.codepostalU)
-    };
+    if($scope.userA){
+      var user = {
+        nom : $scope.userA.nomU,
+        prenom : $scope.userA.prenomU,
+        mdp : $scope.userA.mdpU,
+        mail : $scope.userA.mailU,
+        telephone : parseInt($scope.userA.telephoneU),
+        rue : $scope.userA.rueU,
+        ville : $scope.userA.villeU,
+        codepostal : parseInt($scope.userA.codepostalU)
+      };
+    }
     console.log(user);
 
     $http({
@@ -32,18 +33,22 @@ angular.module('starter.controllers', [])
     }).then(function successCallback(response) {
         console.log(response.data);
         console.log("ça marche");
+        $window.alert("Votre inscription à bien été prise en compte.");
+        $state.go('app.login');
       }, function errorCallback(response) {
         console.log("ça marche pas");
         console.log(response.data);
+        $window.alert("Veuillez remplir les champs ou corriger les champs.");
       });
 
   };
     
   $scope.logIn = function (loginData) {
-          var mail = $scope.loginData.usermail;
-          var mdp = $scope.loginData.userpwd;
-          //console.log(mail + " " + mdp);
-
+          if($scope.loginData){
+            var mail = $scope.loginData.usermail;
+            var mdp = $scope.loginData.userpwd;
+            //console.log(mail + " " + mdp);
+          }
           $http({
             method: 'GET',
             url: 'http://apimatchmypet.mmi-lepuy.fr/api_project/web/app_dev.php/utilisateurs/login?mail=' + mail + '&mdp=' + mdp
@@ -51,12 +56,52 @@ angular.module('starter.controllers', [])
               console.log(response.data);
               console.log("ça marche");
               $rootScope.navHider = false;
+              $window.alert("Vous êtes connectés.");
               $state.go("app.accueil_animaux");
+
             }, function errorCallback(response) {
               console.log("ça marche pas");
               console.log(response.data);
+              $window.alert("Veuillez remplir les champs ou corriger vos identifiants.");
             });
   };
+
+  $scope.addDog = function (dogA) {
+      if($scope.dogA){
+        var dog = {
+          nom : $scope.dogA.nomC,
+          dateNaissance : $scope.dogA.dateNaissanceC,
+          taille : parseInt($scope.dogA.tailleC),
+          couleur : $scope.dogA.couleurC,
+          taches : parseInt($scope.dogA.tachesC),
+          couleurTaches : $scope.dogA.couleurTachesC,
+          pedigree : $scope.dogA.pedigreeC,
+          couleurYeux : $scope.dogA.couleurYeuxC,
+          caractere : parseInt($scope.dogA.caractereC),
+          race : parseInt($scope.dogA.raceC),
+          numPuce : parseInt($scope.dogA.numPuceC),
+          dateCreation : $scope.dogA.dateCreationC,
+          typeAnimal : 1
+        }
+        console.log(dog);
+
+        $http({
+          method: 'POST',
+          url: 'http://apimatchmypet.mmi-lepuy.fr/api_project/web/app_dev.php/ficheschien/new',
+          data: dog
+        }).then(function successCallback(response) {
+            console.log(response.data);
+            console.log("ça marche");
+            $window.alert("Votre chien à bien été ajouté.");
+            $state.go('app.login');
+          }, function errorCallback(response) {
+            console.log("ça marche pas");
+            console.log(response.data);
+            $window.alert("Veuillez remplir les champs ou les corriger.");
+          });
+
+      }
+  }
 
 
 })

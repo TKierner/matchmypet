@@ -10,37 +10,37 @@
     </center>
 
     <!-- formulaire de connexion -->
-      <form ng-click="logIn($loginData)" ng-controller="AppCtrl">
       <div class="list loginForm">
-        <label class="item item-input champsFormLogin">
-          <span class="input-label placeholderText">Login</span>
-          <input class="inputLogin" type="text" ng-model="loginData.usermail">
-        </label>
-        <label class="item item-input champsFormLogin">
-          <span class="input-label placeholderText">Mot de passe</span>
-          <input class="inputLogin" type="password" ng-model="loginData.userpwd">
-        </label>
-        <label class="item BorderLess boutonsLogin">
-          <button class="button button-block button-positive boutonForm" type="submit">Se connecter</button>
-        </label>
+        <form >
+          <label class="item item-input champsFormLogin">
+            <span class="input-label placeholderText">Login</span>
+            <input class="inputLogin" type="text" ng-model="loginData.usermail">
+          </label>
+          <label class="item item-input champsFormLogin">
+            <span class="input-label placeholderText">Mot de passe</span>
+            <input class="inputLogin" type="password" ng-model="loginData.userpwd">
+          </label>
+          <label class="item BorderLess boutonsLogin">
+            <button ng-click="logIn($loginData)" ng-controller="AppCtrl" class="button button-block button-positive boutonForm" type="submit">Se connecter</button>
+          </label>
+        </form>
       </div>
-    </form>
-  </br>
+    
     <div class="ou">
       <p align="center">OU</p>
     </div>
     <!--Lien vers le formulaire d'inscription -->
     <label class="item BorderLess inscriptionButton">       
-      <button class="button button-block button-positive boutonForm">S'inscrire</button>
+      <a style="text-decoration : none;" href="#/app/inscription"><button class="button button-block button-positive boutonForm">S'inscrire</button></a>
     </label>
     </form>
 
     <!-- Mot de passe oublié -->
-    <div class="hide-on-keyboard-open">  
+    <!--<div class="hide-on-keyboard-open">  
       <div id="forgottenPwd">
         <center><a>Mot de passe oublié</a></center>
       </div>
-    </div>
+    </div>-->
   </ion-content>
 </ion-view>
 
