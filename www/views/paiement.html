@@ -11,13 +11,13 @@
         <div class="row indications">
           <div class="col col-100 col-new-padding"><p>Sélectionnez un mode de paiement</p></div>
         </div>
-       <div class="row ligne-paiement2" ng-model="show_carte">
+       <div class="row ligne-paiement2" ng-model="show_carte" ng-click="show_carte=true">
           <div class="col col-50 col-new-padding"><p>Carte bancaire</p></div>
           <div class="col col-20 col-new-padding"><p><img class="icone-paiement" ng-src="img/paiement/visa.png"></p></div>
           <div class="col col-20 col-new-padding"><p><img class="icone-paiement" ng-src="img/paiement/cb.png"></p></div>
           <div class="col col-10 col-new-padding"><p><img class="icone-fleche" ng-src="img/paiement/fleche.png"></p></div>
         </div>
-        <div > <!--ng-show="show_carte"-->
+        <div ng-show="show_carte">
         <form class ="paimentform">
             <div class="list">
                 <label class="item item-input item-stacked-label">
@@ -68,13 +68,13 @@
             </label>
         </form>
         </div>
-        <div class="row ligne-paiement2">
+        <div class="row ligne-paiement2" ng-model="show_paypal" ng-click="show_paypal=true">
           <div class="col col-50 col-new-padding"><p class="left">Paypal</p></div>
           <div class="col col-30 col-new-padding"><p><img class="icone-paiement" ng-src="img/paiement/paypal.png"></p></div>
           <div class="col col-10 col-new-padding"></div>
           <div class="col col-10 col-new-padding"><p><img class="icone-fleche" ng-src="img/paiement/fleche.png"></p></div>
         </div>
-        <div class="row btnpaypal">
+        <div class="row btnpaypal" ng-show="show_paypal">
             <div class="col col-20 col-new-padding"><img ng-src="img/paiement/lock.png"></div>
             <div class="col col-80 col-new-padding"><p>Accéder à </br>Paypal</p></div>
         </div>

@@ -3,20 +3,34 @@
     <div class="contenu_ajout_animal">
     <h4>MÉDOR</h4>
     </div>
-    <div class="row rowdetailanimal" ng-controller="AppCtrl">
-        <div class="slick-container">
-            <slick
-                    infinite=true
-                    slides-to-show=1
-                    slides-to-scroll=1
-            >
-                <div class="slick-item" ng-repeat="image in images">
-                    <img src="{{ image.url }}" />
-                </div>
-            </slick>
-        </div>
-        <!--<div class="col coldetailanimal"><img ng-src="img/détail_animal/photo_chien1.jpg"></div>-->
-    </div>
+      <ion-slides  options="options" slider="data.slider">
+          <ion-slide-page>
+              <div class="box blue"><img src="img/détail_animal/photo_chien1.jpg"/></div>
+          </ion-slide-page>
+          <ion-slide-page>
+              <div class="box yellow"> <img src="img/détail_animal/photo_chien2.jpg"/></div>
+          </ion-slide-page>
+          <ion-slide-page>
+              <div class="box pink"><img src="img/détail_animal/photo_chien3.jpg"/></div>
+          </ion-slide-page>
+      </ion-slides>
+            <!--<slick class="slider" settings="slickConfig" ng-if="slickConfig1Loaded" dots="true">-->
+                <!--&lt;!&ndash;<div ng-repeat="i in number1 track by $index">&ndash;&gt;-->
+                    <!--&lt;!&ndash;&lt;!&ndash;<div class="" ng-include="'tpl2.html'"></div>&ndash;&gt;&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--</slick>-->
+            <!--<div class="slick-container">-->
+                <!--<slick-->
+                        <!--infinite=true-->
+                        <!--slides-to-show=1-->
+                        <!--slides-to-scroll=1-->
+                <!--&gt;-->
+                    <!--<div class="slick-item" ng-repeat="image in images">-->
+                        <!--<img src="{{ image.url }}" />-->
+                    <!--</div>-->
+                <!--</slick>-->
+            <!--</div>-->
+            <!--<div class="col coldetailanimal"><img ng-src="img/détail_animal/photo_chien1.jpg"></div>-->
     <div class="row rowdetailanimal2">
         <div class="col  col-33 coldetailanimalicon borderright"><img ng-src="img/détail_animal/race.png">
         <p>Labrador</p>
