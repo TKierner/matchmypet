@@ -42,7 +42,7 @@
 		<label class="item item-input item-stacked-label">
 		<span class="input-label tache"><img class="imgformtache" ng-src="img/icones_formulaires/tache.png">Tâches</span>
 		<label class="toggle toggle-assertive">
-		   <input type="checkbox" ng-model="dogA.tachesC">
+		   <input type="checkbox" ng-model="dogA.tachesC" ng-true-value="1" ng-false-value="0">
 		   <div class="track">
 			 <div class="handle"></div>
 		   </div>
@@ -77,9 +77,8 @@
 			  Caractère
 			</div>
 			<select ng-model="dogA.caractereC">
-			  <option>Blue</option>
-			  <option selected>Green</option>
-			  <option>Red</option>
+				<option value="">Choisir :</option>
+				<option ng-repeat="c in listCaracteres" value="{{ c.id }}">{{ c.caractere }}</option>
 			</select>
 		</label>
 		<label class="item item-input item-select">
@@ -88,12 +87,10 @@
 			  Race
 			</div>
 			<select ng-model="dogA.raceC">
-			  <option>Blue</option>
-			  <option selected>Green</option>
-			  <option>Red</option>
+				<option value="">Choisir :</option>
+				<option ng-repeat="r in listRaces" value="{{ r.id }}">{{ r.race }}</option>
 			</select>
 		</label>
-		<input type="hidden" value="Date.Now('dd/mm/YYYY');" ng-model="dogA.dateCreationC">
 		<label class="item item-input item-stacked-label">
 			<img class="imgform" ng-src="img/icones_formulaires/puce.png">
 			<input class="special" type="text" placeholder="Numéro de puce" ng-model="dogA.numPuceC">

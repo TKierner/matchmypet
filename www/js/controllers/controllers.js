@@ -8,6 +8,27 @@ angular.module('starter.controllers', [])
   // listen for the $ionicView.enter event:
   //$scope.$on('$ionicView.enter', function(e) {
   //});
+  
+  
+  $scope.options = {
+      loop: false,
+      speed: 700,
+  }
+
+  $scope.$on("$ionicSlides.sliderInitialized", function(event, data){
+      // data.slider is the instance of Swiper
+      $scope.slider = data.slider;
+  });
+
+  $scope.$on("$ionicSlides.slideChangeStart", function(event, data){
+      console.log('Slide change is beginning');
+  });
+
+  $scope.$on("$ionicSlides.slideChangeEnd", function(event, data){
+      // note: the indexes are 0-based
+      $scope.activeIndex = data.slider.activeIndex;
+      $scope.previousIndex = data.slider.previousIndex;
+  });
 
 
   $scope.signIn = function (userA){
@@ -66,6 +87,22 @@ angular.module('starter.controllers', [])
             });
   };
 
+  $scope.listCaracteres = 
+    $http.get("http://apimatchmypet.mmi-lepuy.fr/api_project/web/app_dev.php/caracteres")
+      .then(function(rep) {
+        console.log(rep.data);
+        $scope.listCaracteres = rep.data; 
+    });
+
+  $scope.listRaces = 
+    $http.get("http://apimatchmypet.mmi-lepuy.fr/api_project/web/app_dev.php/raceschien")
+      .then(function(rep) {
+        console.log(rep.data);
+        $scope.listRaces = rep.data; 
+    });
+
+  var maintenant = new Date();
+
   $scope.addDog = function (dogA) {
       if($scope.dogA){
         var dog = {
@@ -80,7 +117,7 @@ angular.module('starter.controllers', [])
           caractere : parseInt($scope.dogA.caractereC),
           race : parseInt($scope.dogA.raceC),
           numPuce : parseInt($scope.dogA.numPuceC),
-          dateCreation : $scope.dogA.dateCreationC,
+          dateCreation : maintenant,
           typeAnimal : 1
         }
         console.log(dog);
