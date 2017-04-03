@@ -9957,7 +9957,7 @@ body img {
   height: 33.3%; }
 
 #choix3 {
-  background-image: url("../img/choix/choix3.jpg");
+  background-image: url("../img/choix/choix3bis.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -9965,7 +9965,7 @@ body img {
 
 #choix1 h2, #choix2 h2, #choix3 h2 {
   text-align: center;
-  padding-top: 31%;
+  padding-top: 24%;
   color: white; }
 
 .choixLink {
@@ -10614,5 +10614,9 @@ p.infoschien {
   margin-bottom: 0;
   padding-left: 16px;
   padding-top: 8px;
+}
+
+.aide a{
+  text-decoration: none;
 }
 
