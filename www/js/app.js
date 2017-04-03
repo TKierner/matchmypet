@@ -9,6 +9,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])//rajouter ici les no
 .run(function($ionicPlatform, user, $rootScope) {
 
   $rootScope.navHider = true;
+  $rootScope.show_carte = false;
+  $rootScope.show_paypal = false;
   //user.login("", ""); //c'est ici qu'on passe les infos du user pour la connexion
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
