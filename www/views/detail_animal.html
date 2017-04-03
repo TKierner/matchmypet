@@ -3,8 +3,19 @@
     <div class="contenu_ajout_animal">
     <h4>MÉDOR</h4>
     </div>
-    <div class="row rowdetailanimal">
-        <div class="col coldetailanimal"><img ng-src="img/détail_animal/photo_chien1.jpg"></div>
+    <div class="row rowdetailanimal" ng-controller="AppCtrl">
+        <div class="slick-container">
+            <slick
+                    infinite=true
+                    slides-to-show=1
+                    slides-to-scroll=1
+            >
+                <div class="slick-item" ng-repeat="image in images">
+                    <img src="{{ image.url }}" />
+                </div>
+            </slick>
+        </div>
+        <!--<div class="col coldetailanimal"><img ng-src="img/détail_animal/photo_chien1.jpg"></div>-->
     </div>
     <div class="row rowdetailanimal2">
         <div class="col  col-33 coldetailanimalicon borderright"><img ng-src="img/détail_animal/race.png">
