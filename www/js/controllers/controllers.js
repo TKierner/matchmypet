@@ -1,6 +1,6 @@
-angular.module('starter.controllers', [])
+angular.module('starter.controllers', ['ionic','ngCordova'])
 
-.controller('AppCtrl', function($rootScope, $scope , $http, $state, $window) {
+.controller('AppCtrl', function($rootScope, $scope , $http, $state, $window, $filter) {
 
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
@@ -8,6 +8,94 @@ angular.module('starter.controllers', [])
   // listen for the $ionicView.enter event:
   //$scope.$on('$ionicView.enter', function(e) {
   //});
+
+
+  var typechien;
+
+  $(document).ready(function(){
+      $(".recherche").click(function(){
+          alert($(this).attr("name"));
+          typechien = $(this).attr("name");
+          listRecherche();
+      })
+  });
+
+   function listRecherche(){
+                  $http({
+                      method: 'GET',
+                      url: 'http://apimatchmypet.mmi-lepuy.fr/api_project/web/app_dev.php/ficheschien'
+                  }).then(function successCallback(rep) {
+                      for (var i = 0; i < rep.data.length; i++) {
+                          //alert(typechien);
+                         // alert(rep.data[i].race.idCategorie.id == typechien);
+                          if (rep.data[i].race.idCategorie.id == typechien) {
+                              $scope.listRecherche = rep.data[i];
+                              console.log($scope.listRecherche);
+                          }
+                      }
+                      return $scope.listRecherche;
+                      console.log(rep.data);
+                      console.log("ça marche");
+                      $window.alert("Vous êtes connectés.");
+                      $state.go("app.resultat_recherche");
+
+                  }, function errorCallback(rep) {
+                      // console.log("ça marche pas");
+                      // console.log(rep.data);
+                      $window.alert("Veuillez remplir les champs ou corriger vos identifiants.");
+                  });
+  }
+
+
+  //debut ajout annonce
+  // faire en fonction de l'id de l'utilisateur qui est connecté !!
+  $scope.listChien =
+      $http.get("http://apimatchmypet.mmi-lepuy.fr/api_project/web/app_dev.php/ficheschien")
+          .then(function(rep) {
+              console.log(rep.data);
+              $scope.listChien = rep.data;
+          });
+
+  $scope.listServices =
+      $http.get("http://apimatchmypet.mmi-lepuy.fr/api_project/web/app_dev.php/services")
+          .then(function(rep) {
+              console.log(rep.data);
+              $scope.listServices = rep.data;
+          });
+
+  var now = $filter('date')(new Date(),'dd/MM/yyyy');
+
+  $scope.addAnnonce = function(annonceA) {
+      if ($scope.annonceA) {
+          var annonce = {
+              prix: parseInt($scope.annonceA.prixChien),
+              description: $scope.annonceA.descriptionChien,
+              datecreation: now,
+              service: $scope.annonceA.serviceChien,
+              idAnimal: $scope.annonceA.nomChien,
+              idUser: 1,
+          };
+          console.log(annonce);
+
+          $http({
+              method: 'POST',
+              url: 'http://apimatchmypet.mmi-lepuy.fr/api_project/web/app_dev.php/annoncechiens/new',
+              data: annonce
+          }).then(function successCallback(response) {
+              console.log(response.data);
+              console.log("ça marche");
+              $window.alert("Votre annonce a bien été ajouté.");
+              $state.go('app.mes_annonces');
+          }, function errorCallback(response) {
+              console.log("ça ne marche pas");
+              console.log(response.data);
+              $window.alert("Veuillez remplir tous les champs ou les corriger.");
+          });
+
+      }
+  }
+      //fin ajout annonce
+
 
 
   $scope.options = {
@@ -75,8 +163,8 @@ angular.module('starter.controllers', [])
           }).then(function successCallback(response) {
               console.log(response.data);
               console.log("ça marche");
-              $rootScope.navHider = false;
               $window.alert("Vous êtes connectés.");
+              $rootScope.navHider = false;
               $state.go("app.accueil_animaux");
 
             }, function errorCallback(response) {
@@ -100,24 +188,26 @@ $scope.listCaracteres =
         $scope.listRaces = rep.data; 
     });
 
-  var maintenant = new Date();
-
   $scope.addDog = function (dogA) {
       if($scope.dogA){
+        console.log($scope.dogA.pedigreeeC);
+        var dateFilter = $filter('date');
+        var formattedDate = dateFilter($scope.dogA.dateNaissanceC, 'dd/MM/yyyy');
         var dog = {
           nom : $scope.dogA.nomC,
-          dateNaissance : $scope.dogA.dateNaissanceC,
+          datenaissance : formattedDate,
           taille : parseInt($scope.dogA.tailleC),
           couleur : $scope.dogA.couleurC,
           taches : parseInt($scope.dogA.tachesC),
-          couleurTaches : $scope.dogA.couleurTachesC,
-          pedigree : $scope.dogA.pedigreeC,
-          couleurYeux : $scope.dogA.couleurYeuxC,
+          couleurtaches : $scope.dogA.couleurTachesC,
+          couleuryeux : $scope.dogA.couleurYeuxC,
+          pedigree : "web/uploads/pedigree/" + $scope.dogA.nomC + "_" + $scope.dogA.numPuceC,
           caractere : parseInt($scope.dogA.caractereC),
           race : parseInt($scope.dogA.raceC),
-          numPuce : parseInt($scope.dogA.numPuceC),
-          dateCreation : maintenant,
-          typeAnimal : 1
+          numpuce : $scope.dogA.numPuceC,
+          datecreation : now,
+          typeanimal : 1,
+          moyenneNotes : 0
         }
         console.log(dog);
 
@@ -129,7 +219,7 @@ $scope.listCaracteres =
             console.log(response.data);
             console.log("ça marche");
             $window.alert("Votre chien à bien été ajouté.");
-            $state.go('app.login');
+            $state.go('app.mes_animaux');
           }, function errorCallback(response) {
             console.log("ça marche pas");
             console.log(response.data);

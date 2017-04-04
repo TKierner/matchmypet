@@ -1,102 +1,94 @@
 <ion-view>
-  <ion-content>
-	  <div class="contenu_ajout_animal">
-    <h4>AJOUTER UN ANIMAL</h4>
+  	<ion-content>
+	  	<div class="contenu_ajout_animal">
+    		<h4>AJOUTER UN ANIMAL</h4>
 
-	<form class ="formanimal" ng-submit="addDog(dogA)" ng-controller="AppCtrl">
-		<div class="row labelupload">
-			<div class="col col-32 btnupload">
-				<input type="file" name="upload" class="inputfile" />
-                <p>+</p>
-			</div>
-			<div class="col col-32 btnupload">
-				<input type="file" name="upload" class="inputfile" />
-				<p>+</p>
-			</div>
-			<div class="col col-32 btnupload">
-				<input type="file" name="upload" class="inputfile" />
-				<p>+</p>
-			</div>
-		</div>
-      <div class="list">
-		<label class="item item-input item-stacked-label">
-			<img class="imgform" ng-src="img/icones_formulaires/nom_chien.png">
-			<input class="special" type="text" placeholder="Nom" ng-model="dogA.nomC">
-			<!-- <input type="text" ng-model="loginData.username">-->
-		</label>
-		<label class="item item-input item-stacked-label">
-			<span class="input-label"><img class="imgformtache" ng-src="img/icones_formulaires/date_naissance.png">Date de naissance</span>
-			<input type="date"ng-model="dogA.dateNaissanceC">
-			<!-- <input type="text" ng-model="loginData.username">-->
-		</label>
-		<label class="item item-input item-stacked-label">
-			<img class="imgform" ng-src="img/icones_formulaires/taille.png">
-			 <input class="special" type="number" name="taille" min="20" max="205" placeholder="Taille" ng-model="dogA.tailleC">
-			<!-- <input type="text" ng-model="loginData.username">-->
-		</label>
-		<label class="item item-input item-stacked-label">
-			<img class="imgform" ng-src="img/icones_formulaires/couleur_poils.png">
-			<input class="special" type="text" placeholder="Couleur du poil" ng-model="dogA.couleurC">
-			<!-- <input type="text" ng-model="loginData.username">-->
-		</label>
-		<label class="item item-input item-stacked-label">
-		<span class="input-label tache"><img class="imgformtache" ng-src="img/icones_formulaires/tache.png">Tâches</span>
-		<label class="toggle toggle-assertive">
-		   <input type="checkbox" ng-model="dogA.tachesC" ng-true-value="1" ng-false-value="0">
-		   <div class="track">
-			 <div class="handle"></div>
-		   </div>
-		</label>
-		</label>
-		<label class="item item-input item-stacked-label">
-			<img class="imgform" ng-src="img/icones_formulaires/tache.png">
-			<input class="special" type="text" placeholder="Couleur des tâches" ng-model="dogA.couleurTachesC">
-			<!-- <input type="text" ng-model="loginData.username">-->
-		</label>
-		<!--<label for="upload" class="item item-input item-stacked-label thumbnail">
-			<img class="imgform" ng-src="img/icones_formulaires/pedigree.png">
-			<text id="labelPedigree">Pedigree</text>
-			<div class="btnpedigree">
-	        <input type="file" name="upload" id="uploadimga" class="inputfile" ng-model="dogA.pedigreeC"/>
-	        <p>+</p>
-	        </div>
-		 </label>-->
-		<label class="item item-input item-stacked-label">
-			<img class="imgform" ng-src="img/icones_formulaires/couleur_yeux.png">
-			<input class="special" type="text" placeholder="Couleur des yeux" ng-model="dogA.couleurYeuxC">
-			<!-- <input type="text" ng-model="loginData.username">-->
-		</label>
-		<label class="item item-input item-select">
-			<div class="input-label">
-				<img class="imgformtacheBis" ng-src="img/icones_formulaires/caractere.png">
-			  Caractère
-			</div>
-			<select ng-model="dogA.caractereC">
-				<option value="">Choisir :</option>
-				<option ng-repeat="c in listCaracteres" value="{{ c.id }}">{{ c.caractere }}</option>
-			</select>
-		</label>
-		<label class="item item-input item-select">
-			<div class="input-label">
-				<img class="imgformtacheBis" ng-src="img/icones_formulaires/race.png">
-			  Race
-			</div>
-			<select ng-model="dogA.raceC">
-				<option value="">Choisir :</option>
-				<option ng-repeat="r in listRaces" value="{{ r.id }}">{{ r.race }}</option>
-			</select>
-		</label>
-		<input type="hidden" value="Date.Now('dd/mm/YYYY');" ng-model="dogA.dateCreationC">
-		<label class="item item-input item-stacked-label">
-			<img class="imgform" ng-src="img/icones_formulaires/puce.png">
-			<input class="special" type="text" placeholder="Numéro de puce" ng-model="dogA.numPuceC">
-			<!-- <input type="text" ng-model="loginData.username">-->
-		</label>
-        <label class="item">
-          <button class="button button-block button-positive btnform" type="submit">AJOUTER</button>
-        </label>
-      </div>
-    </form>
-	  </div>
-  </ion-content>
+			<form class ="formanimal" ng-submit="addDog(dogA)" ng-controller="AppCtrl">
+				<div class="row labelupload">
+					<div class="col col-32 btnupload">
+						<input type="file" name="upload" class="inputfile" />
+		                <p>+</p>
+					</div>
+					<div class="col col-32 btnupload">
+						<input type="file" name="upload" class="inputfile" />
+						<p>+</p>
+					</div>
+					<div class="col col-32 btnupload">
+						<input type="file" name="upload" class="inputfile" />
+						<p>+</p>
+					</div>
+				</div>
+		      	<div class="list">
+					<label class="item item-input item-stacked-label">
+						<img class="imgform" ng-src="img/icones_formulaires/nom_chien.png">
+						<input class="special" type="text" placeholder="Nom" ng-model="dogA.nomC">
+					</label>
+					<label class="item item-input item-stacked-label">
+						<span class="input-label"><img class="imgformtache" ng-src="img/icones_formulaires/date_naissance.png">Date de naissance</span>
+						<input type="date"ng-model="dogA.dateNaissanceC" value="{{ date | date: 'dd/MM/yyyy' }}">
+					</label>
+					<label class="item item-input item-stacked-label">
+						<img class="imgform" ng-src="img/icones_formulaires/taille.png">
+						 <input class="special" type="number" name="taille" min="20" max="205" placeholder="Taille" ng-model="dogA.tailleC">
+					</label>
+					<label class="item item-input item-stacked-label">
+						<img class="imgform" ng-src="img/icones_formulaires/couleur_poils.png">
+						<input class="special" type="text" placeholder="Couleur du poil" ng-model="dogA.couleurC">
+					</label>
+					<label class="item item-input item-stacked-label">
+					<span class="input-label tache"><img class="imgformtache" ng-src="img/icones_formulaires/tache.png">Tâches</span>
+					<label class="toggle toggle-assertive">
+					   <input type="checkbox" ng-model="dogA.tachesC" ng-true-value="1" ng-false-value="0">
+					   <div class="track">
+						 <div class="handle"></div>
+					   </div>
+					</label>
+					</label>
+					<label class="item item-input item-stacked-label">
+						<img class="imgform" ng-src="img/icones_formulaires/tache.png">
+						<input class="special" type="text" placeholder="Couleur des tâches" ng-model="dogA.couleurTachesC">
+					</label>
+					<label for="upload" class="item item-input item-stacked-label thumbnail">
+						<img class="imgform" ng-src="img/icones_formulaires/pedigree.png">
+						<text id="labelPedigree">Pedigree</text>
+						<div class="btnpedigree">
+				        <input type="file" name="upload" id="uploadimga" class="inputfile" ng-model="dogA.pedigreeC"/>
+				        <p>+</p>
+				        </div>
+					 </label>
+					<label class="item item-input item-stacked-label">
+						<img class="imgform" ng-src="img/icones_formulaires/couleur_yeux.png">
+						<input class="special" type="text" placeholder="Couleur des yeux" ng-model="dogA.couleurYeuxC">
+					</label>
+					<label class="item item-input item-select">
+						<div class="input-label">
+							<img class="imgformtacheBis" ng-src="img/icones_formulaires/caractere.png">
+						  Caractère
+						</div>
+						<select ng-model="dogA.caractereC">
+							<option value="">Choisir :</option>
+							<option ng-repeat="c in listCaracteres" value="{{ c.id }}">{{ c.caractere }}</option>
+						</select>
+					</label>
+					<label class="item item-input item-select">
+						<div class="input-label">
+							<img class="imgformtacheBis" ng-src="img/icones_formulaires/race.png">
+						  Race
+						</div>
+						<select ng-model="dogA.raceC">
+							<option value="">Choisir :</option>
+							<option ng-repeat="r in listRaces" value="{{ r.id }}">{{ r.race }}</option>
+						</select>
+					</label>
+					<label class="item item-input item-stacked-label">
+						<img class="imgform" ng-src="img/icones_formulaires/puce.png">
+						<input class="special" type="number" placeholder="Numéro de puce" ng-model="dogA.numPuceC">
+					</label>
+			        <label class="item">
+			          <button class="button button-block button-positive btnform" type="submit">AJOUTER</button>
+			        </label>
+			    </div>
+		    </form>
+	  	</div>
+  	</ion-content>
 </ion-view>
