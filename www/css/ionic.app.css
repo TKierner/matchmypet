@@ -4324,9 +4324,9 @@ a.subdued {
   left: 0;
   z-index: 9; }
 
-.bar .back-button.hide,
+/*.bar .back-button.hide,
 .bar .buttons .hide {
-  display: none; }
+  display: none; }*/
 
 .nav-bar-tabs-top .bar {
   background-image: none; }
@@ -9356,8 +9356,8 @@ a.button {
  * Utility Classes
  * --------------------------------------------------
  */
-.hide {
-  display: none; }
+/*.hide {
+  display: none; }*/
 
 .opacity-hide {
   opacity: 0; }
@@ -10296,10 +10296,13 @@ input::-webkit-input-placeholder {
   background-repeat: no-repeat;
   background-size: cover; }
 
-/*#recherchechien4{
-    background-image: url("../img/recherche-intuitive/chien-course.jpg");
+#recherchechien4{
+    background-image: url("../img/recherche-intuitive/chien-domestique.jpg");
     height: 200px;
-}*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #recherchechien1 h2, #recherchechien2 h2, #recherchechien3 h2, #recherchechien4 h2 {
   padding-top: 25%;
   text-align: center;

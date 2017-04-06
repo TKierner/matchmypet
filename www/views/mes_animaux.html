@@ -4,7 +4,7 @@
       <h4>MES ANIMAUX</h4>
     </div>
     
-    <div class="row mesannonces">
+    <!-- <div class="row mesannonces" col="2">
         <div class="col col-50 colannonces">
             <img ng-src="img/mes_annonces/chien1.jpg">
             <p class="nomchien">Médor</p>
@@ -31,6 +31,17 @@
             <p class="infoschien">Lofté</p>
             <img class="imgplus" ng-src="img/mes_chiens/edit.png">
         </div>
+    </div> -->
+
+    <div ng-repeat="items in split_items" class="row mesannonces">
+        <div class="col col-50 colannonces" ng-repeat="item in items">    
+            <img ng-src="img/mes_annonces/chien{{ item.id }}.jpg">
+            <p class="nomchien">{{ item.nom }}</p>
+            <p class="infoschien">{{ item.datenaissance | date : 'dd/MM/yyyy' }}</p>
+            <p class="infoschien">{{ item.race.race }}</p>
+            <img class="imgplus" ng-src="img/mes_chiens/edit.png">
+        </div>
     </div>
+
   </ion-content>
 </ion-view>

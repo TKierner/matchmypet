@@ -1,36 +1,44 @@
 <ion-view view-title="Détail annonce">
   <ion-content>
     <div class="contenu_ajout_animal">
-    <h4>MÉDOR</h4>
+    <h4>{{ annonceChien.idAnimal.nom }}</h4>
     </div>
-    <div class="row rowdetailanimal">
-        <div class="col coldetailanimal"><img ng-src="img/détail_animal/photo_chien1.jpg"></div>
-    </div>
+      <ion-slides  options="options" slider="data.slider">
+          <ion-slide-page>
+              <div class="box blue"><img src="img/détail_animal/labrador1.jpg"/></div>
+          </ion-slide-page>
+          <ion-slide-page>
+              <div class="box yellow"> <img src="img/détail_animal/labrador2.jpg"/></div>
+          </ion-slide-page>
+          <ion-slide-page>
+              <div class="box pink"><img src="img/détail_animal/labrador3.jpg"/></div>
+          </ion-slide-page>
+      </ion-slides>
     <div class="row rowdetailanimal2">
         <div class="col  col-33 coldetailanimalicon borderright"><img ng-src="img/détail_animal/race.png">
-        <p>Labrador</p>
+        <p>{{ annonceChien.idAnimal.race.race }}</p>
         </div>
         <div class="col  col-33 coldetailanimalicon borderright"><img ng-src="img/détail_animal/date_naissance.png">
-        <p>2 ans</p>
+        <p>{{detailsChien.datenaissance | date:'dd/MM/yyyy'}}</p>
         </div>
         <div class="col  col-33 coldetailanimalicon"><img ng-src="img/détail_animal/taille.png">
-        <p>58 cm</p>
+        <p>{{detailsChien.taille}} cm</p>
         </div>
     </div>
     <div class="row rowdetailanimal2">
         <div class="col  col-33 coldetailanimalicon borderright bordertop"><img ng-src="img/détail_animal/couleur_du_poil.png">
-        <p>Beige</p>
+        <p>{{detailsChien.couleur}}</p>
         </div>
         <div class="col  col-33 coldetailanimalicon borderright bordertop"><img ng-src="img/détail_animal/couleur_des_yeux.png">
-        <p>Bleu</p>
+        <p>{{detailsChien.couleuryeux}}</p>
         </div>
         <div class="col  col-33 coldetailanimalicon bordertop"><img ng-src="img/détail_animal/caractere.png">
-        <p>Doux</p>
+        <p>{{detailsChien.caractere.caractere}}</p>
         </div>
     </div>
     <div class="description">
         <h3>Description</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut consectetur augue. Sed mattis eleifend quam, et euismod nunc euismod sed. Phasellus sed faucibus nunc, eget auctor nulla. Suspendisse potenti. Nullam lorem leo, auctor quis velit nec, volutpat gravida nisi. Sed tincidunt leo nec diam tincidunt, at dignissim sapien egestas. Sed congue nibh id consequat maximus. Cras est urna, lacinia et semper at, vestibulum ut risus. Etiam fermentum nisi ac nibh tempus, eget placerat dui rhoncus. In in magna id nisl fermentum aliquet a sit amet justo. Nulla sed libero facilisis, feugiat felis vitae, iaculis turpis. Integer ut arcu sit amet massa auctor bibendum.<p>
+        <p>{{detailsannonceChien.description}}<p>
     </div>
     <div class="row rowdetailavecicon">
         <div class="col col-10 coliconl col-new-padding"><img ng-src="img/détail_animal/geolocalisation.png"></div>
@@ -52,17 +60,17 @@
         <div class="col col-50 col-new-padding"><p>4/5</p></div>
     </div>
       <a class="choixLink" href="#/app/paiement"><div class="btnajoutpanier">
-    	<h3>850€</h3>
-    	<div class="row rowbtnajoutpanier rowBtnPanier">
-       		<div class="col-80 col-new-padding"><p>AJOUTER AU PANIER</p></div>
-       		<div class="col-20 col-new-padding"><img ng-src="img/icones_menu/panier.png"></div>
-    	</div>
+       <h3>{{detailsannonceChien.prix}}€</h3>
+       <div class="row rowbtnajoutpanier rowBtnPanier">
+              <div class="col-80 col-new-padding"><p>AJOUTER AU PANIER</p></div>
+              <div class="col-20 col-new-padding"><img ng-src="img/icones_menu/panier.png"></div>
+       </div>
       </div></a>
     <div class="commentaires">
         <h3>Commentaires</h3>
-        <div class="comment">
-            <p class="nomcomment">Romain Gallard</p>
-            <p class="textcomment">L'échange s'est trés bien passé, je recommande ce chien !</p>
+        <div class="comment" ng-repeat="c in commentsChien">
+            <p class="nomcomment">{{c.idUser.prenom}} {{c.idUser.nom}}</p>
+            <p class="textcomment">{{c.commentaire}}</p>
             <!--<div class="row rowdetailnote2">
             <div class="col col-10 col-new-padding"><img ng-src="img/détail_animal/star_couleur.png"></div>
             <div class="col col-10 col-new-padding"><img ng-src="img/détail_animal/star_couleur.png"></div>

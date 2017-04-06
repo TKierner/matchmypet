@@ -6,12 +6,11 @@
 // 'starter.controllers' is found in controllers.js
 angular.module('starter', ['ionic', 'starter.controllers'])//rajouter ici les nouveaux controllers
 
-.run(function($ionicPlatform, user, $rootScope) {
+.run(function($ionicPlatform, $rootScope) {
 
   $rootScope.navHider = true;
   $rootScope.show_carte = false;
   $rootScope.show_paypal = false;
-  //user.login("", ""); //c'est ici qu'on passe les infos du user pour la connexion
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
@@ -29,7 +28,6 @@ angular.module('starter', ['ionic', 'starter.controllers'])//rajouter ici les no
 
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
-
     .state('app', {
     url: '/app',
     abstract: true,
@@ -64,7 +62,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])//rajouter ici les no
     url: '/ajout_commentaire',
     views: {
       'menuContent': {
-        templateUrl: 'views/ajout_commentaire.html'
+        templateUrl: 'views/ajout_commentaire.html',
+        controller: 'AppCtrl'
       }
     }
   })
@@ -74,17 +73,30 @@ angular.module('starter', ['ionic', 'starter.controllers'])//rajouter ici les no
           url: '/profil_chien',
           views: {
               'menuContent': {
-                  templateUrl: 'views/profil_chien.html'
+                  templateUrl: 'views/profil_chien.html',
+                  controller: 'AppCtrl'
               }
           }
       })
 
-      //page resultat recherche
+      //page resultat recherche precise
       .state('app.resultat_recherche', {
           url: '/resultat_recherche',
           views: {
               'menuContent': {
-                  templateUrl: 'views/resultat_recherche.html'
+                  templateUrl: 'views/resultat_recherche.html',
+                  controller: 'AppCtrl'
+              }
+          }
+      })
+
+      //page resultat recherche catégorie
+      .state('app.resultat_recherche_categorie', {
+          url: '/resultat_recherche_categorie',
+          views: {
+              'menuContent': {
+                  templateUrl: 'views/resultat_recherche_categorie.html',
+                  controller: 'AppCtrl'
               }
           }
       })
@@ -94,7 +106,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])//rajouter ici les no
     url: '/formulaire_recherche',
     views: {
       'menuContent': {
-        templateUrl: 'views/formulaire_recherche.html'
+        templateUrl: 'views/formulaire_recherche.html',
+        controller: 'AppCtrl'
       }
     }
   })
@@ -104,7 +117,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])//rajouter ici les no
     url: '/paiement',
     views: {
       'menuContent': {
-        templateUrl: 'views/paiement.html'
+        templateUrl: 'views/paiement.html',
+        controller: 'AppCtrl'
       }
     }
   })
@@ -114,7 +128,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])//rajouter ici les no
     url: '/detail_annonces',
     views: {
       'menuContent': {
-        templateUrl: 'views/detail_annonces.html'
+        templateUrl: 'views/detail_annonces.html',
+        controller: 'AppCtrl'       
       }
     }
   })
@@ -124,7 +139,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])//rajouter ici les no
     url: '/ajout_annonce',
     views: {
       'menuContent': {
-        templateUrl: 'views/ajout_annonce.html'
+        templateUrl: 'views/ajout_annonce.html',
+        controller: 'AppCtrl'
       }
     }
   })
@@ -134,7 +150,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])//rajouter ici les no
     url: '/recherche',
     views: {
       'menuContent': {
-        templateUrl: 'views/recherche.html'
+        templateUrl: 'views/recherche.html',
+        controller: 'AppCtrl'
       }
     }
   })
@@ -143,7 +160,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])//rajouter ici les no
     url: '/mes_annonces',
     views: {
       'menuContent': {
-        templateUrl: 'views/mes_annonces.html'
+        templateUrl: 'views/mes_annonces.html',
+        controller: 'AppCtrl'
       }
     }
   })
@@ -152,7 +170,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])//rajouter ici les no
     url: '/historique',
     views: {
       'menuContent': {
-        templateUrl: 'views/historique.html'
+        templateUrl: 'views/historique.html',
+        controller: 'AppCtrl'
       }
     }
   })
@@ -161,7 +180,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])//rajouter ici les no
     url: '/aide',
     views: {
       'menuContent': {
-        templateUrl: 'views/aide.html'
+        templateUrl: 'views/aide.html',
+        controller: 'AppCtrl'
       }
     }
   })
@@ -170,7 +190,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])//rajouter ici les no
       url: '/mes_animaux',
       views: {
         'menuContent': {
-          templateUrl: 'views/mes_animaux.html'
+          templateUrl: 'views/mes_animaux.html',
+          controller: 'AppCtrl'
         }
       }
     })
@@ -180,7 +201,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])//rajouter ici les no
     url: '/detail_animal',
     views: {
       'menuContent': {
-        templateUrl: 'views/detail_animal.html'
+        templateUrl: 'views/detail_animal.html',
+        controller: 'AppCtrl'
       }
     }
   })
@@ -189,7 +211,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])//rajouter ici les no
     url: '/accueil_animaux',
     views: {
       'menuContent': {
-        templateUrl: 'views/accueil_animaux.html'
+        templateUrl: 'views/accueil_animaux.html',
+        controller: 'AppCtrl'
       }
     }
   })
@@ -198,7 +221,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])//rajouter ici les no
     url: '/ajout_animal',
     views: {
       'menuContent': {
-        templateUrl: 'views/ajout_animal.html'
+        templateUrl: 'views/ajout_animal.html',
+        controller: 'AppCtrl'
       }
     }
   })
@@ -207,7 +231,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])//rajouter ici les no
       url: '/inscription',
       views: {
         'menuContent': {
-          templateUrl: 'views/inscription.html'
+          templateUrl: 'views/inscription.html',
+          controller: 'AppCtrl'
         }
       }
     })
@@ -216,7 +241,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])//rajouter ici les no
       url: '/mon_profil',
       views: {
         'menuContent': {
-          templateUrl: 'views/mon_profil.html'
+          templateUrl: 'views/mon_profil.html',
+          controller: 'AppCtrl'
         }
       }
     })
@@ -225,7 +251,8 @@ angular.module('starter', ['ionic', 'starter.controllers'])//rajouter ici les no
       url: '/choix',
       views: {
         'menuContent': {
-          templateUrl: 'views/choix.html'
+          templateUrl: 'views/choix.html',
+          controller: 'AppCtrl'
         }
       }
     })

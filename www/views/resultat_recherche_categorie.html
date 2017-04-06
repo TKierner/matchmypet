@@ -1,11 +1,13 @@
 <ion-view view-title="Les animaux">
     <ion-content>
         <div class="choix_animaux">
-            <div ng-repeat="items in recherchePrecise" class="row">
+            <div ng-repeat="items in split_recherche" class="row">
                <div ng-repeat="item in items" class="col col-50"> 
-                    <a href="#/app/detail_annonces"><!--<img class="imgaccueil chien" name="{{ item.id }}" ng-src="img/img_recherche/{{ item.id }}.jpg">-->{{ item.nom }}</a>
+                    <a href="#/app/detail_annonces" data-id="{{ item.id }}" ng-click="clicResultRecherche($event)">
+                        <img class="imgaccueil chien"  name="{{ item.id }}" ng-src="img/img_recherche/{{ item.id }}.jpg">
+                    </a>
                 </div>
-                <div class="col col-50"><a href="#/app/detail_annonces"><img class="imgaccueil chien"  name="2" ng-src="img/img_recherche/2.jpg"></a></div>
+               <!--  <div class="col col-50"><a href="#/app/detail_annonces"><img class="imgaccueil chien"  name="2" ng-src="img/img_recherche/2.jpg"></a></div> -->
             </div>
             <!-- <div class="row">
                 <div class="col col-50"><img class="imgaccueil" ng-src="img/img_recherche/3.jpg"></div>

@@ -1,7 +1,7 @@
 <ion-view view-title="Détail animal">
   <ion-content>
     <div class="contenu_ajout_animal">
-    <h4>MÉDOR</h4>
+    <h4>{{detailsChien.nom}}</h4>
     </div>
       <ion-slides  options="options" slider="data.slider">
           <ion-slide-page>
@@ -33,28 +33,28 @@
             <!--<div class="col coldetailanimal"><img ng-src="img/détail_animal/photo_chien1.jpg"></div>-->
     <div class="row rowdetailanimal2">
         <div class="col  col-33 coldetailanimalicon borderright"><img ng-src="img/détail_animal/race.png">
-        <p>Labrador</p>
+        <p>{{detailsChien.race.race}}</p>
         </div>
         <div class="col  col-33 coldetailanimalicon borderright"><img ng-src="img/détail_animal/date_naissance.png">
-        <p>2 ans</p>
+        <p>{{detailsChien.datenaissance | date:'dd/MM/yyyy'}}</p>
         </div>
         <div class="col  col-33 coldetailanimalicon"><img ng-src="img/détail_animal/taille.png">
-        <p>58 cm</p>
+        <p>{{detailsChien.taille}} cm</p>
         </div>
     </div>
     <div class="row rowdetailanimal2">
         <div class="col  col-33 coldetailanimalicon borderright bordertop"><img ng-src="img/détail_animal/couleur_du_poil.png">
-        <p>Beige</p>
+        <p>{{detailsChien.couleur}}</p>
         </div>
         <div class="col  col-33 coldetailanimalicon borderright bordertop"><img ng-src="img/détail_animal/couleur_des_yeux.png">
-        <p>Bleu</p>
+        <p>{{detailsChien.couleuryeux}}</p>
         </div>
         <div class="col  col-33 coldetailanimalicon bordertop"><img ng-src="img/détail_animal/caractere.png">
-        <p>Doux</p>
+        <p>{{detailsChien.caractere.caractere}}</p>
         </div>
     </div>
     <div class="description">
-        <h3>Description</h3>
+        <h3>{{detailsannonceChien.description}}</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut consectetur augue. Sed mattis eleifend quam, et euismod nunc euismod sed. Phasellus sed faucibus nunc, eget auctor nulla. Suspendisse potenti. Nullam lorem leo, auctor quis velit nec, volutpat gravida nisi. Sed tincidunt leo nec diam tincidunt, at dignissim sapien egestas. Sed congue nibh id consequat maximus. Cras est urna, lacinia et semper at, vestibulum ut risus. Etiam fermentum nisi ac nibh tempus, eget placerat dui rhoncus. In in magna id nisl fermentum aliquet a sit amet justo. Nulla sed libero facilisis, feugiat felis vitae, iaculis turpis. Integer ut arcu sit amet massa auctor bibendum.<p>
     </div>
     <div class="row rowdetailavecicon">
